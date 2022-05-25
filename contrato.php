@@ -3,8 +3,7 @@
 if($_POST){
 
     $name = $_POST['name'];
-
-
+    $correo = $_POST['email'];
 }
 
 use Dompdf\Dompdf;
