@@ -5,7 +5,8 @@ if($_POST){
     $name = $_POST['name'];
     $correo = $_POST['email'];
     $telefono = $_POST['phone'];
-    
+    $fecha_nacimiento = $_POST['born'];
+    $nacionalidad = $_POST['nacionalidad'];
 }
 
 use Dompdf\Dompdf;
