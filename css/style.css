@@ -1,0 +1,134 @@
+body {
+    background: rgb(198, 198, 198) !important;
+    background: linear-gradient(160deg, rgba(198, 198, 198, 1) 0%, rgba(56, 56, 56, 1) 67%) !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 70px;
+}
+
+a {
+    color: #4545fd;
+}
+
+.main-block {
+    display: table;
+    margin: 50px auto 0;
+    background-color: #fff;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 5px;
+}
+
+.main-block>.header {
+    background: #ffffff url(portada.jpg) center center no-repeat;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 80px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #fff;
+}
+
+.main-block>.body {
+    padding: 30px 0px;
+}
+
+.main-block>.footer {
+    border-top: 1px solid #ddd;
+}
+
+.main-block>.footer p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.head {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.header {
+    color: #fff !important;
+    padding: 20px;
+    background-color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.forms {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 0px 30px;
+    margin-top: 15px;
+}
+
+.form-row {
+    padding: 0px 30px;
+}
+
+.form-group>.label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+
+.mensuals {
+    color: rgb(78, 78, 78) !important;
+    font-size: 13px;
+}
+
+.texto{
+    padding-top: 56px;
+    padding-left: 14px;
+}
+
+
+@media (max-width: 600px) {
+    .texto {
+        padding-top: 1px;
+        padding-left: 1px;
+    }
+  }
+
+.boton{
+    padding: 8px 100px;
+    background-color: #acacac;
+    border: none;
+    border-radius: 10px;
+}
+
+#submit{
+text-align: center;
+}
+
+.boton:hover{
+    padding: 8px 100px;
+    background-color: #bebebe;
+    border: none;
+    border-radius: 10px;
+}
+
+#nTargeta{
+    padding: 20px 20px;
+}
