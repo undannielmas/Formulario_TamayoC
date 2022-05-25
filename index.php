@@ -145,6 +145,9 @@
                             <option selected>Elegir respuesta...</option>
                             <option value="Soltero">Soltero</option>
                             <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Union Libre">Union Libre</option>
+                            <option value="Viudo">Viudo</option>
                         </select>
                     </div>
                     <div class="form-group col-md-6">
@@ -157,6 +160,7 @@
                         </select>
                     </div>
                 </div>
+                <!---->
                 <h2 class="header">Datos Del Beneficiario</h2>
                 <div class="col-auto my-1" style="Padding: 0px 30px;">
                     <label class="mr-sm-2" for="testamento" style="padding-top: 20px;">¿Cuenta Con Un
