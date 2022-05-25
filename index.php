@@ -47,17 +47,15 @@
                         placeholder="Ejemplo '22 de Enero de 1999'">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="nacionalidad">Nacionalidad:</label>
                         <select class="custom-select mr-sm-2" name="nacionalidad" id="nacionalidad">
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
-                            <option value="Mexicana">Mexicana</option>
                             <option value="Extranjero">Extranjero</option>
-                            <option value="Extranjera">Extranjera</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="estado">Estado de Residencia:</label>
                         <select class="custom-select mr-sm-2" name="estado" id="estado">
                             <option selected>Elegir respuesta...</option>
@@ -94,6 +92,11 @@
                             <option value="Yucatán">Yucatán</option>
                             <option value="Zacatecas">Zacatecas</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="municipio">Municipio:</label>
+                        <input type="text" class="form-control" name="municipio" id="municipio"
+                            placeholder="Municipio..." minlength="4" maxlength="60" size="10">
                     </div>
                 </div>
                 <div class="form-row">
@@ -137,19 +140,21 @@
                 </div>
                 <div class="form-row" style="padding-bottom: 20px;">
                 <div class="form-group col-md-6">
-                        <label for="nacionalidad">Estado Civil:</label>
+                        <label for="estado_civil">Estado Civil:</label>
                         <select class="custom-select mr-sm-2" name="estado_civil" id="estado_civil">
                             <option selected>Elegir respuesta...</option>
-                            <option value="Mexicano">Soltero</option>
-                            <option value="Mexicana"></option>
-                            <option value="Extranjero">Extranjero</option>
-                            <option value="Extranjera">Extranjera</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="regimen">Régimen Conyugal:</label>
-                        <input type="text" class="form-control" name="regimen" id="regimen"
-                            placeholder="Régimen conyugal...">
+                    <label for="regimen_conyugal">Regimen Conyugal:</label>
+                        <select class="custom-select mr-sm-2" name="regimen_conyugal" id="regimen_conyugal">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="Bienes Mancomunados">Bienes Mancomunados</option>
+                            <option value="Bienes Separados">Bienes Separados</option>
+                            <option value="">Soltero</option>
+                        </select>
                     </div>
                 </div>
                 <h2 class="header">Datos Del Beneficiario</h2>
