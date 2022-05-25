@@ -4,6 +4,7 @@ if($_POST){
 
     $name = $_POST['name'];
     $correo = $_POST['email'];
+    $telefono = $_POST['phone'];
 }
 
 use Dompdf\Dompdf;
