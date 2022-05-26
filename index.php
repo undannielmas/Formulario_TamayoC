@@ -94,7 +94,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                    <label for="municipio">Municipio:</label>
+                        <label for="municipio">Municipio:</label>
                         <input type="text" class="form-control" name="municipio" id="municipio"
                             placeholder="Municipio..." minlength="4" maxlength="60" size="10">
                     </div>
@@ -102,8 +102,8 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="calle">Calle:</label>
-                        <input type="text" class="form-control" name="calle" id="calle"
-                            placeholder="Calle..." minlength="4" maxlength="30" size="10">
+                        <input type="text" class="form-control" name="calle" id="calle" placeholder="Calle..."
+                            minlength="4" maxlength="30" size="10">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="numero">Numero:</label>
@@ -117,8 +117,8 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="rfc">Codigo Postal</label>
-                        <input type="text" class="form-control" name="cp" id="cp" placeholder="C.P"
-                            minlength="1" maxlength="5" size="10" style="text-transform:uppercase">
+                        <input type="text" class="form-control" name="cp" id="cp" placeholder="C.P" minlength="1"
+                            maxlength="5" size="10" style="text-transform:uppercase">
                     </div>
                 </div>
                 <div class="form-group">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="form-row" style="padding-bottom: 20px;">
-                <div class="form-group col-md-6">
+                    <div class="form-group col-md-6">
                         <label for="estado_civil">Estado Civil:</label>
                         <select class="custom-select mr-sm-2" name="estado_civil" id="estado_civil">
                             <option selected>Elegir respuesta...</option>
@@ -151,7 +151,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                    <label for="regimen_conyugal">Regimen Conyugal:</label>
+                        <label for="regimen_conyugal">Regimen Conyugal:</label>
                         <select class="custom-select mr-sm-2" name="regimen_conyugal" id="regimen_conyugal">
                             <option selected>Elegir respuesta...</option>
                             <option value="Bienes Mancomunados">Bienes Mancomunados</option>
@@ -183,7 +183,8 @@
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="nacionalidad-beneficiario">Nacionalidad:</label>
-                        <select class="custom-select mr-sm-2" name="nacionalidad-beneficiario" id="nacionalidad-beneficiario">
+                        <select class="custom-select mr-sm-2" name="nacionalidad-beneficiario"
+                            id="nacionalidad-beneficiario">
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
                             <option value="Extranjero">Extranjero</option>
@@ -230,9 +231,10 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                    <label for="municipio-beneficiario">Municipio:</label>
-                        <input type="text" class="form-control" name="municipio-beneficiario" id="municipio-beneficiario"
-                            placeholder="Municipio..." minlength="4" maxlength="60" size="10">
+                        <label for="municipio-beneficiario">Municipio:</label>
+                        <input type="text" class="form-control" name="municipio-beneficiario"
+                            id="municipio-beneficiario" placeholder="Municipio..." minlength="4" maxlength="60"
+                            size="10">
                     </div>
                 </div>
                 <div class="form-row">
@@ -243,18 +245,18 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="numero-beneficiario">Numero:</label>
-                        <input type="text" class="form-control" name="numero-beneficiario" id="numero-beneficiario" placeholder="Numero..."
-                            minlength="4" maxlength="14" size="10">
+                        <input type="text" class="form-control" name="numero-beneficiario" id="numero-beneficiario"
+                            placeholder="Numero..." minlength="4" maxlength="14" size="10">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="colonia-beneficiario">Colonia:</label>
-                        <input type="text" class="form-control" name="colonia-beneficiario" id="colonia-beneficiario" placeholder="Colonia..."
-                            minlength="4" maxlength="50" size="10">
+                        <input type="text" class="form-control" name="colonia-beneficiario" id="colonia-beneficiario"
+                            placeholder="Colonia..." minlength="4" maxlength="50" size="10">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="cp-beneficiario">Codigo Postal</label>
-                        <input type="text" class="form-control" name="cp-beneficiario" id="cp-beneficiario" placeholder="C.P"
-                            minlength="1" maxlength="5" size="10" style="text-transform:uppercase">
+                        <input type="text" class="form-control" name="cp-beneficiario" id="cp-beneficiario"
+                            placeholder="C.P" minlength="1" maxlength="5" size="10" style="text-transform:uppercase">
                     </div>
                 </div>
                 <div class="form-row">
@@ -272,9 +274,10 @@
                     </div>
                 </div>
                 <div class="form-row" style="padding-bottom: 20px;">
-                <div class="form-group col-md-6">
+                    <div class="form-group col-md-6">
                         <label for="estado_civil_beneficiario">Estado Civil:</label>
-                        <select class="custom-select mr-sm-2" name="estado_civil_beneficiario" id="estado_civil_beneficiario">
+                        <select class="custom-select mr-sm-2" name="estado_civil_beneficiario"
+                            id="estado_civil_beneficiario">
                             <option selected>Elegir respuesta...</option>
                             <option value="Soltero">Soltero</option>
                             <option value="Casado">Casado</option>
@@ -284,8 +287,9 @@
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                    <label for="regimen_conyugal">Regimen Conyugal:</label>
-                        <select class="custom-select mr-sm-2" name="regimen_conyugal_beneficiario" id="regimen_conyugal_beneficiario">
+                        <label for="regimen_conyugal">Regimen Conyugal:</label>
+                        <select class="custom-select mr-sm-2" name="regimen_conyugal_beneficiario"
+                            id="regimen_conyugal_beneficiario">
                             <option selected>Elegir respuesta...</option>
                             <option value="Bienes Mancomunados">Bienes Mancomunados</option>
                             <option value="Bienes Separados">Bienes Separados</option>
@@ -304,6 +308,9 @@
                             placeholder="Ocupación...">
                     </div>
                 </div>
+
+                <!--Datos sobre la inversión-->
+
                 <h2 class="header">Datos Sobre la Inversión</h2>
                 <div class="form-group">
                     <label for="fecha-inversion">Fecha Estimada De La Inversión:</label>
@@ -327,6 +334,27 @@
                     <input type="text" class="form-control" name="descripcion" id="descripcion"
                         placeholder="Descripción corta...">
                 </div>
+
+                <!--Check de firmas-->
+
+                <div class="form-group" style="padding:25px 30px;">
+                    <p>Personas responsables de la firma</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="mdr" id="inlineCheckbox1" value="Mario de la Rocha ">
+                        <label class="form-check-label" for="inlineCheckbox1">Mario de la Rocha</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                </div>
+
+                <!--END Check de firmas-->
+
                 <div class="form-group">
                     <label for="lugar">Lugar De Firma De La Inversión:</label>
                     <input type="text" class="form-control" name="lugar" id="lugar" placeholder="Lugar de firma...">

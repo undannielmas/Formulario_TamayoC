@@ -25,7 +25,6 @@ ob_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrato <?php echo $name; ?></title>
     <style>
-
     .container {
         color: black;
         text-align: justify;
@@ -63,17 +62,26 @@ ob_start();
 <body>
     <div class="container">
         <section style="padding-top: 20px"><span style="text-transform: uppercase;">CONTRATO DE MUTUO CON INTERÉS (EL
-                “CONTRATO") QUE CELEBRAN POR
-                SUS PROPIOS DERECHOS
-                <strong><?php echo $name?></strong>, A QUIEN EN LO SUCESIVO SE LE DENOMINARÁ COMO “LA MUTUANTE”; Y POR
-                OTRA
-                PARTE LA SOCIEDAD DENOMINADA GEOFIRMUS, S.A.P.I. DE C.V., REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO
-                POR ROBERTO AGUILAR CARAVEO y MIGUEL DARÍO RODRÍGUEZ MARÍN, A QUIEN EN LO SUCESIVO SE LE DENOMINARÁ COMO
-                “EL
-                MUTUATARIO”; A “LA MUTUANTE” Y “EL MUTUATARIO” CONJUNTAMENTE SE LES DENOMINARÁ “LAS PARTES” E
-                INDISTINTAMENTE, UNA “PARTE”; CONTRATO CELEBRADO    DE CONFORMIDAD CON LAS SIGUIENTES DECLARACIONES Y
-                CLÁUSULAS:
+                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <?php $name ?>, A QUIEN EN LO SUCESIVO SE LE
+                DENOMINARÁ COMO “EL MUTUANTE”; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA GEOFIRMUS, S.A.P.I. DE C.V.,
+                REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO POR FIRMANTE 1 y FIRMANTE 2, A QUIEN EN LO SUCESIVO SE LE
+                DENOMINARÁ COMO “EL MUTUATARIO”; A “EL MUTUANTE” Y “EL MUTUATARIO” CONJUNTAMENTE SE LES DENOMINARÁ “LAS
+                PARTES” E INDISTINTAMENTE, UNA “PARTE”; CONTRATO CELEBRADO DE CONFORMIDAD CON LAS SIGUIENTES
+                DECLARACIONES Y CLÁUSULAS:
             </span></section>
+
+        <h3 style="text-align: center; text-decoration: underline;
+        ">GLOSARIO DE TÉRMINOS </h3>
+
+        <section>
+            <ol type="1">
+                <li>“EL MUTUANTE”: Persona física o moral que otorga en mutuo con interés una cantidad determinada de
+                    dinero en favor de otra persona física o moral. Dicha cantidad al ser otorgada en mutuo con interés
+                    debe ser liquidada en un plazo de tiempo determinado y bajo un interés legal o convencional.
+                <li>“BENEFICIARIO”: Persona física de genero masculino o femenino que designa “EL MUTUANTE” en
+                    relación a la cláusula de cesión de derechos advertida en el presente instrumento.
+            </ol>
+        </section>
 
         <h3 style="text-align: center; text-decoration: underline;
         ">DECLARACIONES </h3>
@@ -82,7 +90,8 @@ ob_start();
             <p style="text-align: center;">I. Declara <strong>“EL MUTUANTE”</strong> por su propio derecho, bajo
                 protesta de decir verdad:</p>
             <ol type="a">
-                <li>Ser <?php echo $nacionalidad ?>, mayor de edad, originario de , Nuevo León, Casada, bajo el régimen conyugal
+                <li>Ser <?php echo $nacionalidad ?>, mayor de edad, originario de , Nuevo León, Casada, bajo el régimen
+                    conyugal
                     de bienes mancomunados, con fecha de nacimiento del día 09 de octubre de 1996, Coordinadora
                     Administrativa, al corriente en el pago del Impuesto Sobre la Renta sin justificarlo de momento,
                     inscrita en el Registro Federal de Contribuyentes bajo la clave SAZH961009LA2 e inscrita en la Clave
@@ -118,8 +127,8 @@ ob_start();
                     León, inscrita en el Registro Público de Comercio bajo el folio mercantil electrónico número
                     N-2019031718 en la ciudad de Monterrey, Nuevo León el día 22 de febrero de 2022. Mismas facultades
                     que a la fecha no les han sido revocadas ni limitadas de forma alguna y bajo ningún título. .
-                <li>Su objeto social comprende, entre otras actividades, la captación de recursos para el desarrollo 
-                    de diversos desarrollos en sus diferentes modalidades.. 
+                <li>Su objeto social comprende, entre otras actividades, la captación de recursos para el desarrollo
+                    de diversos desarrollos en sus diferentes modalidades..
                 <li> Se invertirá el capital en el siguiente bien inmueble (en lo sucesivo “EL INMUEBLE”):
             </ol>
         </section>
