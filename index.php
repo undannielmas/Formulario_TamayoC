@@ -182,17 +182,15 @@
                         placeholder="Ejemplo '22 de Enero de 1999'">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="nacionalidad-beneficiario">Nacionalidad:</label>
                         <select class="custom-select mr-sm-2" name="nacionalidad-beneficiario" id="nacionalidad-beneficiario">
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
-                            <option value="Mexicana">Mexicana</option>
                             <option value="Extranjero">Extranjero</option>
-                            <option value="Extranjera">Extranjera</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="estado-beneficiario">Estado de Residencia:</label>
                         <select class="custom-select mr-sm-2" name="estado-beneficiario" id="estado-beneficiario">
                             <option selected>Elegir respuesta...</option>
@@ -229,6 +227,11 @@
                             <option value="Yucatán">Yucatán</option>
                             <option value="Zacatecas">Zacatecas</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="municipio-beneficiario">Municipio:</label>
+                        <input type="text" class="form-control" name="municipio-beneficiario" id="municipio-beneficiario"
+                            placeholder="Municipio..." minlength="4" maxlength="60" size="10">
                     </div>
                 </div>
                 <div class="form-row">
