@@ -130,7 +130,7 @@ ob_start();
                     inscrito en la Clave Única del Registro de
                     Población bajo
                     la clave <span style="text-transform: uppercase;"><?php echo $curp; ?></span> y con domicilio
-                    ubicado en la Calle <?php echo $calle ?>, número <?php echo $numero ?>, Colonia
+                    ubicado en la Calle <?php echo $calle; ?>, número <?php echo $numero ?>, Colonia
                     <?php echo $colonia ?>, C.P. <?php echo $codigo_postal ?>, <?php echo $ciudad_actual ?>,
                     <?php echo $estado_actual ?>.
                 <li style="line-height: 12px;">Conoce el contenido y alcance legal de la Ley Nacional de Extinción de
@@ -267,10 +267,77 @@ ob_start();
             <p><strong>QUINTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">De La Vigilancia Y
                     Término Del Contrato.</span>
             <p>
-            <strong>“LAS PARTES”</strong> acuerdan que el presente contrato tendrá una vigencia de <?php echo $plazo_inversion; ?> meses y terminará según dicha
+                <strong>“LAS PARTES”</strong> acuerdan que el presente contrato tendrá una vigencia de
+                <?php echo $plazo_inversion; ?> meses y terminará según dicha
                 cláusula sin necesidad de dar aviso por escrito o cualquier otra forma de desahucio a la terminación de
                 este.
             </p>
+            <p>
+                Aunado a lo anterior, <strong>“LAS PARTES”</strong> suscriben que el plazo será forzoso para ambas por
+                lo que en ningún
+                momento se podrá dar por cancelado el presente contrato hasta que termine la vigencia del mismo.
+            </p>
+            <p><strong>SEXTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Derechos Y
+                    Obligaciones De <strong>“EL MUTUANTE”</strong>.</span>
+            <p>
+                <strong>“EL MUTUANTE”</strong> tendrá derecho a solicitar a <strong>“EL MUTUATARIO”</strong> la
+                información y documentación necesaria a
+                efectos de comprobar que el importe a que se refiere la cláusula <strong>SEGUNDA</strong> de este
+                instrumento está siendo
+                utilizado de forma adecuada en el desarrollo y construcción del inmueble.
+            </p>
+            <p><strong>SÉPTIMA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Facultades de
+                    <strong>“EL MUTUATARIO”</strong>.</span>
+            <p>
+                <strong>“EL MUTUATARIO”</strong> se reserva las siguientes facultades irrevocables en el marco del
+                presente contrato:
+            </p>
+            <ol type="a">
+                <li>Administrar el importe de <strong>“LA INVERSION”</strong> para efectos de desarrollar <strong>“EL
+                        INMUEBLE”</strong>.</li>
+                <li>Decidir estrategias de comercialización y publicidad de <strong>“EL INMUEBLE”</strong></li>
+                <li>Administrar la construcción y <strong>“EL INMUEBLE”</strong> durante y una vez terminado el
+                    desarrollo de la construcción, pudiendo abonar expensas de reparación, mejoras, mantenimiento y/o
+                    cualquier acto de conservación.</li>
+            </ol>
+            <p><strong>OCTAVA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Terminación o
+                    Rescisión.</span>
+            <p>El presente contrato terminará su vigencia por cualquiera de las siguientes causas:</p>
+            <ol type="a">
+                <li>Automáticamente por la expiración de su vigencia o de su prórroga.</li>
+            </ol>
+            <p><strong>NOVENA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">De Los
+                    Gastos.</span>
+            <p>
+                Todos los gastos, derechos y honorarios que llegaren a originarse con motivo del presente contrato,
+                serán liquidados por cuenta de <strong>“EL MUTUATARIO”</strong>. Con excepción de los impuestos que
+                recaigan en <strong>“EL
+                    MUTUANTE”</strong> conforme a leyes tributarias vigentes.
+            </p>
+            <p><strong>DECIMA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Información y
+                    Veracidad.</span>
+            <P>
+                <strong>“LAS PARTES”</strong> concuerdan que <strong>“EL MUTUATARIO”</strong> ha satisfecho todas las
+                dudas y ha brindado información suficiente, detallada, veraz y completa sobre el desarrollo y
+                construcción de <strong>“EL INMUEBLE” a “EL MUTUANTE”</strong>.
+            </P>
+            <p><strong>DECIMA PRIMERA.-</strong><span
+                    style="padding-left: 32PX; text-decoration: underline;">Confidencialidad.</span>
+            <p>
+                “LAS PARTES” establecen que el conjunto de los comunicados que se establezcan entre “LAS PARTES” son
+                estrictamente confidenciales. En consecuencia de lo anterior, cada una de “LAS PARTES” se compromete a
+                preservar el carácter confidencial del contenido de los comunicados, información y documentos entregados
+                por la otra "PARTE”.
+            </p>
+            <p>
+                Asimismo, <strong>“LAS PARTES”</strong> se comprometen en no divulgar parcial o totalmente a Terceros el
+                contenido de
+                éstos sin autorización expresa de la otra <strong>"PARTE”</strong>, además cada una de <strong>“LAS
+                    PARTES”</strong> se compromete en
+                tomar todas las medidas necesarias frente a sus familiares o terceros para limitar la divulgación de la
+                información confidencial.
+            </p>
+
         </section>
     </div>
 </body>
@@ -281,8 +348,8 @@ ob_start();
 $html= ob_get_clean();
 echo $html;
 
-
 ?>
+
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
 $dompdf->load_html($html);

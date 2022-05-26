@@ -291,22 +291,22 @@
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="calle-beneficiario">Calle:</label>
-                        <input type="text" class="form-control" name="calle" id="calle" placeholder="Calle..."
+                        <input type="text" class="form-control" name="calle-beneficiario" id="calle-beneficiario" placeholder="Calle..."
                             minlength="4" maxlength="30" size="10">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="numero-beneficiario">Numero:</label>
-                        <input type="text" class="form-control" name="numero" id="numero" placeholder="Numero..."
+                        <input type="text" class="form-control" name="numero-beneficiario" id="numero" placeholder="Numero..."
                             minlength="4" maxlength="14" size="10">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="colonia-beneficiario">Colonia:</label>
-                        <input type="text" class="form-control" name="colonia" id="colonia" placeholder="Colonia..."
+                        <input type="text" class="form-control" name="colonia-beneficiario" id="colonia" placeholder="Colonia..."
                             minlength="4" maxlength="50" size="10">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="cp-beneficiario">Codigo Postal</label>
-                        <input type="text" class="form-control" name="cp" id="cp" placeholder="C.P" minlength="1"
+                        <input type="text" class="form-control" name="cp-beneficiario" id="cp" placeholder="C.P" minlength="1"
                             maxlength="5" size="10" style="text-transform:uppercase">
                     </div>
                     <div class="form-group col-md-4 ">
@@ -316,7 +316,7 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label for="estado-beneficiario">Estado:</label>
-                        <select class="custom-select mr-sm-2" name="estado" id="estado">
+                        <select class="custom-select mr-sm-2" name="estado-beneficiario" id="estado">
                             <option selected>Elegir respuesta...</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Baja California">Baja California</option>
