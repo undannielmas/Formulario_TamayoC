@@ -177,11 +177,6 @@
                         placeholder="Nombre Completo">
                 </div>
                 <div class="form-group">
-                    <label for="nombre-beneficiario" style="padding-top: 20px;">Segundo Beneficiario (Opcional):</label>
-                    <input type="text" class="form-control" name="nombre-beneficiario" id="nombre-beneficiario"
-                        placeholder="Nombre Completo">
-                </div>
-                <div class="form-group">
                     <label class="select" for="born-beneficiario">Fecha De Nacimiento:</label>
                     <input type="text" class="form-control" name="born-beneficiario" id="born-beneficiario"
                         placeholder="Ejemplo '22 de Enero de 1999'">
