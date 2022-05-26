@@ -126,7 +126,7 @@
                     <div class="form-group col-md-4 ">
                         <label for="ciudad_residencia">Ciudad / Municipio</label>
                         <input type="text" class="form-control" name="ciudad_residencia" id="ciudad_residencia" placeholder="Monterrey" minlength="1"
-                            maxlength="5" size="10">
+                            maxlength="50" size="10">
                     </div>
                     <div class="form-group col-md-4">
                     <label for="estado">Estado:</label>
@@ -198,7 +198,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="regimen_conyugal">Regimen Conyugal:</label>
+                        <label for="regimen_conyugal">Regimen Conyugal (En Caso De Ser Casado):</label>
                         <select class="custom-select mr-sm-2" name="regimen_conyugal" id="regimen_conyugal">
                             <option selected>Elegir respuesta...</option>
                             <option value="Bienes Mancomunados">Bienes Mancomunados</option>

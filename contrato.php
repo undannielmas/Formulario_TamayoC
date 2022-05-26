@@ -14,6 +14,8 @@ if($_POST){
     $numero = $_POST['numero'];
     $colonia = $_POST['colonia'];
     $codigo_postal = $_POST['cp'];
+    $ciudad_actual = $_POST['ciudad_residencia'];
+    $estado_actual = $_POST['estado'];
     $curp = $_POST['curp'];
     $rfc = $_POST['rfc'];
     $ciudad = $_POST['ciudad'];
@@ -111,10 +113,10 @@ ob_start();
                     su caso, <?php echo $regimen_conyugal; ?>, con fecha de nacimiento del dia
                     <?php echo $fecha_nacimiento ?>, <?php echo $ocupacion; ?>, al corriente en el pago del
                     Impuesto Sobre la Renta sin justificarlo de momento, inscrito en el Registro Federal de
-                    Contribuyentes bajo la clave <?php echo $rfc; ?> e inscrito en la Clave Única del Registro de
+                    Contribuyentes bajo la clave <span style="text-transform: uppercase;"><?php echo $rfc; ?></span> e inscrito en la Clave Única del Registro de
                     Población bajo
-                    la clave <?php echo $curp; ?> y con domicilio ubicado en la Calle <?php echo $calle ?> número <?php echo $numero ?> Colonia
-                    <?php echo $colonia ?>, C.P 
+                    la clave <span style="text-transform: uppercase;"><?php echo $curp; ?></span> y con domicilio ubicado en la Calle <?php echo $calle ?> número <?php echo $numero ?> Colonia
+                    <?php echo $colonia ?>, C.P <?php echo $codigo_postal ?>, <?php echo $ciudad_actual ?>, <?php echo $estado_actual ?>
                 <li>Conoce el contenido y alcance legal de la Ley Nacional de Extinción de Dominio Reglamentaria del
                     artículo 22 de la Constitución Política de los Estados Unidos Mexicanos, publicada en el Diario
                     Oficial de la Federación el día 9 de agosto del 2019 por lo cual declara, bajo protesta de decir
