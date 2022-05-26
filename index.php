@@ -337,19 +337,32 @@
 
                 <!--Check de firmas-->
 
-                <div class="form-group" style="padding:25px 30px;">
-                    <p>Personas responsables de la firma</p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="mdr" id="inlineCheckbox1" value="Mario de la Rocha ">
-                        <label class="form-check-label" for="inlineCheckbox1">Mario de la Rocha</label>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 1</label>
+                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="Mario de la Rocha">Mario de la Rocha</option>
+                            <option value="Roberto Aguilar">Roberto Aguilar</option>
+                        </select>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    <div class="form-group col-md-4">
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Plazo De La
+                            Inversión:</label>
+                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="18 Meses">18 Meses</option>
+                            <option value="24 Meses">24 Meses</option>
+                        </select>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    <div class="form-group col-md-4">
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Plazo De La
+                            Inversión:</label>
+                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="18 Meses">18 Meses</option>
+                            <option value="24 Meses">24 Meses</option>
+                        </select>
                     </div>
                 </div>
 

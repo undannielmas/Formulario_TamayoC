@@ -1,7 +1,6 @@
 <?php
 
 if($_POST){
-
     $name = $_POST['name'];
     $correo = $_POST['email'];
     $telefono = $_POST['phone'];
@@ -62,7 +61,7 @@ ob_start();
 <body>
     <div class="container">
         <section style="padding-top: 20px"><span style="text-transform: uppercase;">CONTRATO DE MUTUO CON INTERÉS (EL
-                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <?php $name ?>, A QUIEN EN LO SUCESIVO SE LE
+                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <strong> <?php echo $name ?></strong>, A QUIEN EN LO SUCESIVO SE LE
                 DENOMINARÁ COMO “EL MUTUANTE”; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA GEOFIRMUS, S.A.P.I. DE C.V.,
                 REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO POR FIRMANTE 1 y FIRMANTE 2, A QUIEN EN LO SUCESIVO SE LE
                 DENOMINARÁ COMO “EL MUTUATARIO”; A “EL MUTUANTE” Y “EL MUTUATARIO” CONJUNTAMENTE SE LES DENOMINARÁ “LAS
