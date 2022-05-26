@@ -6,9 +6,12 @@ if($_POST){
     $telefono = $_POST['phone'];
     $fecha_nacimiento = $_POST['born'];
     $nacionalidad = $_POST['nacionalidad'];
+    $estado = $_POST['estado'];
+    $estado_civil = $_POST['estado_civil'];
+    $ciudad = $_POST['ciudad'];
     $firmante1 = $_POST['firmante1'];
     $firmante2 = $_POST['firmante2'];
-    
+
 }
 
 use Dompdf\Dompdf;
@@ -64,9 +67,12 @@ ob_start();
 <body>
     <div class="container">
         <section style="padding-top: 20px"><span style="text-transform: uppercase;">CONTRATO DE MUTUO CON INTERÉS (EL
-                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <strong> <?php echo $name ?></strong>, A QUIEN EN LO SUCESIVO SE LE
+                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <strong> <?php echo $name; ?></strong>, A QUIEN EN LO
+                SUCESIVO SE LE
                 DENOMINARÁ COMO “EL MUTUANTE”; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA GEOFIRMUS, S.A.P.I. DE C.V.,
-                REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO POR <?php echo $firmante1 ?> y <?php echo $firmante2 ?>, A QUIEN EN LO SUCESIVO SE LE
+                REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO POR <strong><?php echo $firmante1; ?></strong> y
+                <strong><?php echo $firmante2; ?></strong>, A
+                QUIEN EN LO SUCESIVO SE LE
                 DENOMINARÁ COMO “EL MUTUATARIO”; A “EL MUTUANTE” Y “EL MUTUATARIO” CONJUNTAMENTE SE LES DENOMINARÁ “LAS
                 PARTES” E INDISTINTAMENTE, UNA “PARTE”; CONTRATO CELEBRADO DE CONFORMIDAD CON LAS SIGUIENTES
                 DECLARACIONES Y CLÁUSULAS:
@@ -92,13 +98,12 @@ ob_start();
             <p style="text-align: center;">I. Declara <strong>“EL MUTUANTE”</strong> por su propio derecho, bajo
                 protesta de decir verdad:</p>
             <ol type="a">
-                <li>Ser <?php echo $nacionalidad ?>, mayor de edad, originario de , Nuevo León, Casada, bajo el régimen
-                    conyugal
-                    de bienes mancomunados, con fecha de nacimiento del día 09 de octubre de 1996, Coordinadora
-                    Administrativa, al corriente en el pago del Impuesto Sobre la Renta sin justificarlo de momento,
-                    inscrita en el Registro Federal de Contribuyentes bajo la clave SAZH961009LA2 e inscrita en la Clave
-                    Única del Registro de Población bajo la clave SAZH961009MNLLPR04 y con domicilio ubicado en la Calle
-                    Titania, número 138, Colonia Cosmópolis, C.P. 66612, Apodaca, Nuevo León.
+                <li>a) Ser <?php echo $nacionalidad; ?>, mayor de edad, originario de <?php echo $ciudad ?>, <?php echo $estado ?>, <?php echo $estado_civil; ?> y en
+                    su caso, régimen
+                    conyugal, con fecha de nacimiento del día día de mes de año, Ocupación, al corriente en el pago del
+                    Impuesto Sobre la Renta sin justificarlo de momento, inscrito en el Registro Federal de
+                    Contribuyentes bajo la clave CLAVE RFC e inscrito en la Clave Única del Registro de Población bajo
+                    la clave CLAVE CURP y con domicilio ubicado en la DATOS DEL DOMICILIO
                 <li>Conoce el contenido y alcance legal de la Ley Nacional de Extinción de Dominio Reglamentaria del
                     artículo 22 de la Constitución Política de los Estados Unidos Mexicanos, publicada en el Diario
                     Oficial de la Federación el día 9 de agosto del 2019 por lo cual declara, bajo protesta de decir

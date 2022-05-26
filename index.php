@@ -94,9 +94,9 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="municipio">Municipio:</label>
-                        <input type="text" class="form-control" name="municipio" id="municipio"
-                            placeholder="Municipio..." minlength="4" maxlength="60" size="10">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" class="form-control" name="ciudad" id="ciudad"
+                            placeholder="Municipio / Ciudad ..." minlength="4" maxlength="60" size="10">
                     </div>
                 </div>
                 <div class="form-row">
