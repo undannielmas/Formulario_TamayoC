@@ -6,8 +6,12 @@ if($_POST){
     $telefono = $_POST['phone'];
     $fecha_nacimiento = $_POST['born'];
     $nacionalidad = $_POST['nacionalidad'];
-    $estado = $_POST['estado'];
+    $ocupacion = $_POST['work'];
+    $estado_nacimiento = $_POST['estado_nacimiento'];
     $estado_civil = $_POST['estado_civil'];
+    $regimen_conyugal = $_POST['regimen_conyugal'];
+    $curp = $_POST['curp'];
+    $rfc = $_POST['rfc'];
     $ciudad = $_POST['ciudad'];
     $firmante1 = $_POST['firmante1'];
     $firmante2 = $_POST['firmante2'];
@@ -98,12 +102,11 @@ ob_start();
             <p style="text-align: center;">I. Declara <strong>“EL MUTUANTE”</strong> por su propio derecho, bajo
                 protesta de decir verdad:</p>
             <ol type="a">
-                <li>a) Ser <?php echo $nacionalidad; ?>, mayor de edad, originario de <?php echo $ciudad ?>, <?php echo $estado ?>, <?php echo $estado_civil; ?> y en
-                    su caso, régimen
-                    conyugal, con fecha de nacimiento del día día de mes de año, Ocupación, al corriente en el pago del
+                <li>a) Ser <?php echo $nacionalidad; ?>, mayor de edad, originario de <?php echo $ciudad ?>, <?php echo $estado_nacimiento ?>, <?php echo $estado_civil; ?> y en
+                    su caso, <?php echo $regimen_conyugal; ?>, con fecha de nacimiento del dia <?php echo $fecha_nacimiento ?>, <?php echo $ocupacion; ?>, al corriente en el pago del
                     Impuesto Sobre la Renta sin justificarlo de momento, inscrito en el Registro Federal de
-                    Contribuyentes bajo la clave CLAVE RFC e inscrito en la Clave Única del Registro de Población bajo
-                    la clave CLAVE CURP y con domicilio ubicado en la DATOS DEL DOMICILIO
+                    Contribuyentes bajo la clave <?php echo $rfc; ?> e inscrito en la Clave Única del Registro de Población bajo
+                    la clave <?php echo $curp; ?> y con domicilio ubicado en la 
                 <li>Conoce el contenido y alcance legal de la Ley Nacional de Extinción de Dominio Reglamentaria del
                     artículo 22 de la Constitución Política de los Estados Unidos Mexicanos, publicada en el Diario
                     Oficial de la Federación el día 9 de agosto del 2019 por lo cual declara, bajo protesta de decir
