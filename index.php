@@ -206,6 +206,7 @@
                         </select>
                     </div>
                 </div>
+
                 <!--DATOS DEL BENEFICIARIO-->
                 <h2 class="header">Datos Del Beneficiario</h2>
                 <div class="col-auto my-1" style="Padding: 0px 30px;">
@@ -365,14 +366,19 @@
                         placeholder="DD/MM/AA">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="inversion">Monto Estimado A Invertir:</label>
                         <input type="text" class="form-control" name="inversion" id="inversion"
                             placeholder="Desde 500,000...">
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="regimen-beneficiario">Tasa De Rendimiento (en %):</label>
-                        <input type="text" class="form-control" name="regimen" id="regimen"
+                    <div class="form-group col-md-4">
+                        <label for="inversion">Monto En Letra:</label>
+                        <input type="text" class="form-control" name="inversion_letra" id="inversion"
+                            placeholder="Desde 500,000...">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="tasa>Tasa De Rendimiento (en %):</label>
+                        <input type="text" class="form-control" name="tasa_rendimiento" id="tasa_rendimiento"
                             placeholder="Tasa de rendimiento..." maxlength="2" size="10" pattern="[0-9]+">
                     </div>
                 </div>

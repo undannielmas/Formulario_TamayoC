@@ -21,6 +21,8 @@ if($_POST){
     $ciudad = $_POST['ciudad'];
     $firmante1 = $_POST['firmante1'];
     $firmante2 = $_POST['firmante2'];
+    $inversion = $_POST['inversion'];
+    $inversion_letra = $_POST['inversion_letra'];
 
 }
 
@@ -78,16 +80,20 @@ ob_start();
 
 <body>
     <div class="container">
-        <section style="padding-top: 20px; line-height: 12px;"><span style="text-transform: uppercase;"><span style="text-decoration: underline;"><strong>CONTRATO DE
-                MUTUO CON INTERÉS</span></strong> (EL
+        <section style="padding-top: 20px; line-height: 12px;"><span style="text-transform: uppercase;"><span
+                    style="text-decoration: underline;"><strong>CONTRATO DE
+                        MUTUO CON INTERÉS</span></strong> (EL
                 “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <strong> <?php echo $name; ?></strong>, A QUIEN EN LO
                 SUCESIVO SE LE
-                DENOMINARÁ COMO <strong>“EL MUTUANTE”</strong>; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA <strong>GEOFIRMUS, S.A.P.I. DE C.V.</strong>,
+                DENOMINARÁ COMO <strong>“EL MUTUANTE”</strong>; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA
+                <strong>GEOFIRMUS, S.A.P.I. DE C.V.</strong>,
                 REPRESENTADA MANCOMUNADAMENTE EN ESTE ACTO POR <strong><?php echo $firmante1; ?></strong> y
                 <strong><?php echo $firmante2; ?></strong>, A
                 QUIEN EN LO SUCESIVO SE LE
-                DENOMINARÁ COMO <strong>“EL MUTUATARIO”</strong>; A <strong>“EL MUTUANTE”</strong> Y <strong>“EL MUTUATARIO”</strong> CONJUNTAMENTE SE LES DENOMINARÁ <strong>“LAS
-                PARTES”</strong> E INDISTINTAMENTE, UNA <strong>“PARTE”</strong>; CONTRATO CELEBRADO DE CONFORMIDAD CON LAS SIGUIENTES
+                DENOMINARÁ COMO <strong>“EL MUTUATARIO”</strong>; A <strong>“EL MUTUANTE”</strong> Y <strong>“EL
+                    MUTUATARIO”</strong> CONJUNTAMENTE SE LES DENOMINARÁ <strong>“LAS
+                    PARTES”</strong> E INDISTINTAMENTE, UNA <strong>“PARTE”</strong>; CONTRATO CELEBRADO DE CONFORMIDAD
+                CON LAS SIGUIENTES
                 DECLARACIONES Y CLÁUSULAS:
             </span></section>
 
@@ -169,16 +175,19 @@ ob_start();
                     Veracruz.</li>
                 <li>Manifiesta en relación con lo señalado por la Ley Nacional de Extinción de Dominio, lo siguiente:
                 </li>
-                <p>i. Que <strong>“EL INMUEBLE”</strong> objeto de la presente operación no es, ni ha sido, instrumento, objeto o
+                <p>i. Que <strong>“EL INMUEBLE”</strong> objeto de la presente operación no es, ni ha sido, instrumento,
+                    objeto o
                     producto de delito(s) previstos en el cuarto párrafo del artículo 22 de la Constitución Política de
                     los Estados Unidos Mexicanos, ni de ninguno de los previstos en el tercer y cuarto párrafo del
                     artículo 20 de la Constitución Política del Estado Libre y Soberano de Nuevo León, ni de ninguna
                     otra actividad ilícita; </p>
-                <li>Que es la intención determinante de su voluntad, celebrar el presente contrato con <strong>“EL MUTUANTE”</strong> en
+                <li>Que es la intención determinante de su voluntad, celebrar el presente contrato con <strong>“EL
+                        MUTUANTE”</strong> en
                     los términos y condiciones previstos en el presente contrato.</li>
             </ol>
             <div style="padding-left: 50px;"">
-            <p style="text-align: left; font-size:12px;">III. Declaran <strong>“LAS PARTES”</strong> por sus propios derechos y a
+            <p style=" text-align: left; font-size:12px;">III. Declaran <strong>“LAS PARTES”</strong> por sus propios
+                derechos y a
                 través de sus apoderados,<br> bajo protesta de decir verdad:</p>
             </div>
             <ol type="a">
@@ -190,12 +199,25 @@ ob_start();
                     renuncia formal y expresa a impugnaciones presentes o futuras respecto al carácter y personalidad
                     con la que comparecen y en relación con el presente acto jurídico</li>
             </ol>
-            <p style="text-align: center;">Tomando en cuenta lo anteriormente declarado, <strong>“LAS PARTES”</strong> acuerdan someterse al tenor de las siguientes:</p>
+            <p style="text-align: center;">Tomando en cuenta lo anteriormente declarado, <strong>“LAS PARTES”</strong>
+                acuerdan someterse al tenor de las siguientes:</p>
         </section>
         <h3 style="text-align: center; text-decoration: underline;
         ">CLAUSULAS</h3>
         <section>
-            
+            <p><strong>PRIMERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Objeto del
+                    contrato</span></p>
+            <p>Sujeto a los términos y condiciones establecidos en el presente Contrato, <strong>“EL
+                    MUTUATARIO”</strong> declara que <strong>“EL
+                    MUTUANTE”</strong> otorga en mutuo con interés la cantidad advertida en la cláusula segunda de este
+                instrumento,
+                misma cantidad que representa el objeto del presente contrato, la cual estará sujeta a un interés
+                convencional y será devuelta a <strong>“EL MUTUANTE”</strong> con sus respectivos intereses.</p>
+            <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de "LA
+                    INVERSION"</span></p>
+            <p><stong>“LAS PARTES”</stong> acuerdan que <stong>“EL MUTUANTE”</stong> conviene en abonar a “EL MUTUATARIO” en concepto de mutuo con
+                interés el importe de $ M.N. (Monto en letra de pesos 00/100 Moneda
+                Nacional), cifra que en lo sucesivo y dentro de este texto se le denominará “LA INVERSION”.</p>
         </section>
     </div>
 </body>
@@ -207,9 +229,7 @@ $html= ob_get_clean();
 echo $html;
 
 
-
 ?>
-
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
 $dompdf->load_html($html);
