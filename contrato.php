@@ -23,6 +23,8 @@ if($_POST){
     $firmante2 = $_POST['firmante2'];
     $inversion = $_POST['inversion'];
     $inversion_letra = $_POST['inversion_letra'];
+    $tasa_inversion = $_POST['tasa_inversion'];
+    $plazo_inversion = $_POST['plazo-inversion'];
 
 }
 
@@ -206,7 +208,7 @@ ob_start();
         ">CLAUSULAS</h3>
         <section>
             <p><strong>PRIMERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Objeto del
-                    contrato</span></p>
+                    contrato.</span></p>
             <p>Sujeto a los términos y condiciones establecidos en el presente Contrato, <strong>“EL
                     MUTUATARIO”</strong> declara que <strong>“EL
                     MUTUANTE”</strong> otorga en mutuo con interés la cantidad advertida en la cláusula segunda de este
@@ -214,10 +216,61 @@ ob_start();
                 misma cantidad que representa el objeto del presente contrato, la cual estará sujeta a un interés
                 convencional y será devuelta a <strong>“EL MUTUANTE”</strong> con sus respectivos intereses.</p>
             <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de "LA
-                    INVERSION"</span></p>
-            <p><stong>“LAS PARTES”</stong> acuerdan que <stong>“EL MUTUANTE”</stong> conviene en abonar a “EL MUTUATARIO” en concepto de mutuo con
-                interés el importe de $ M.N. (Monto en letra de pesos 00/100 Moneda
-                Nacional), cifra que en lo sucesivo y dentro de este texto se le denominará “LA INVERSION”.</p>
+                    INVERSION".</span></p>
+            <p>
+                <stong>“LAS PARTES”</stong> acuerdan que <strong>“EL MUTUANTE”</strong> conviene en abonar a <strong>“EL
+                    MUTUATARIO”</strong> en concepto de mutuo con
+                interés el importe de $<strong><?php echo $inversion; ?> M.N. (<?php echo $inversion_letra; ?> 00/100
+                    Moneda
+                    Nacional)</strong>, cifra que en lo sucesivo y dentro de este texto se le denominará <strong>“LA
+                    INVERSION”</strong>.
+            </p>
+            <p>
+                Asimismo, <strong>“LAS PARTES”</strong> acuerdan que <strong>“EL MUTUANTE”</strong> entregará a
+                <strong>“EL MUTUATARIO”</strong> la cantidad antes
+                mencionada por medio de transferencia, la cual puede ser depositada a una cuenta de <strong>“EL
+                    MUTUATARIO”</strong>
+                hasta en un período máximo de 48 horas, después de la celebración del presente Contrato, misma cuenta
+                que se señala a continuación: <strong>Cuenta número: 65507472279; CLABE: 014580655074722796; Banco:
+                    Santander.</strong>
+            </p>
+            <p><strong>TERCERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Del Pago.</span>
+            <p><strong>“EL MUTUATARIO”</strong> reconoce deber y se obliga a pagar a <strong>“EL MUTUANTE” “LA
+                    INVERSION”</strong> señalada en la cláusula
+                anterior, más el porcentaje de los rendimientos acordados por <strong>“LAS PARTES”</strong>, y señala
+                <strong>“EL MUTUATARIO”</strong> que
+                el otorgamiento por su parte de este instrumento, al manifestar su conformidad con el mismo al firmarlo,
+                constituye la obligación ante <strong>“EL MUTUANTE”</strong> de pagar en tiempo y forma <strong>“LA
+                    INVERSIÓN"</strong> con su respectivo
+                rendimiento citado en la presente cláusula.
+            </p>
+            <p>
+                <strong>“LAS PARTES”</strong> pactan que <strong>“LA INVERSION”</strong> devengará un interés
+                convencional, mismo que se encontrará
+                contenido en Anexo A del presente contrato en donde se advertirá la generación del mismo a través del
+                plazo de la inversión.
+            </p>
+            <p>
+                <strong>“EL MUTUANTE”</strong> solamente podrá cobrar los rendimientos de manera mensual o al finalizar
+                la vigencia del presente instrumento conforme al Anexo A adjunto.
+            </p>
+            <p><strong>CUARTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Garantía De
+                    <strong>"EL MUTUATARIO".</strong></span>
+            <P>
+                Para garantizar el importe a que se refiere la cláusula segunda del presente instrumento, <strong>"EL
+                    MUTUATARIO"</strong> se obliga a suscribir en favor de <strong>"EL MUTUANTE"</strong>, un pagaré por
+                un valor de <strong>$ <?php echo $inversion ?> M.N.
+                    (<?php echo $inversion_letra; ?> 00/100 Moneda Nacional)</strong>, mismo que <strong>“EL
+                    MUTUANTE”</strong> deberá entregar a <strong>"EL MUTUATARIO"</strong>
+                una vez que no haya obligaciones pendientes entre <strong>“LAS PARTES”.</strong>
+            </P>
+            <p><strong>QUINTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">De La Vigilancia Y
+                    Término Del Contrato.</span>
+            <p>
+            <strong>“LAS PARTES”</strong> acuerdan que el presente contrato tendrá una vigencia de <?php echo $plazo_inversion; ?> meses y terminará según dicha
+                cláusula sin necesidad de dar aviso por escrito o cualquier otra forma de desahucio a la terminación de
+                este.
+            </p>
         </section>
     </div>
 </body>
