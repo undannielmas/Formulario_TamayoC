@@ -156,7 +156,6 @@
                             <option selected>Elegir respuesta...</option>
                             <option value="Bienes Mancomunados">Bienes Mancomunados</option>
                             <option value="Bienes Separados">Bienes Separados</option>
-                            <option value="">Soltero</option>
                         </select>
                     </div>
                 </div>
@@ -188,6 +187,8 @@
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
                             <option value="Extranjero">Extranjero</option>
+                            <option value="Mexicana">Mexicano</option>
+                            <option value="Extranjera">Extranjero</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
@@ -270,16 +271,25 @@
                             style="text-transform:uppercase">
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="civil-beneficiario">Estado Civil:</label>
-                        <input type="text" class="form-control" name="civil-beneficiario" id="civil-beneficiario"
-                            placeholder="Estado civil...">
+                <div class="form-row" style="padding-bottom: 20px;">
+                <div class="form-group col-md-6">
+                        <label for="estado_civil_beneficiario">Estado Civil:</label>
+                        <select class="custom-select mr-sm-2" name="estado_civil_beneficiario" id="estado_civil_beneficiario">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Union Libre">Union Libre</option>
+                            <option value="Viudo">Viudo</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="regimen-beneficiario">Régimen Conyugal:</label>
-                        <input type="text" class="form-control" name="regimen-beneficiario" id="regimen-beneficiario"
-                            placeholder="Régimen conyugal...">
+                    <label for="regimen_conyugal">Regimen Conyugal:</label>
+                        <select class="custom-select mr-sm-2" name="regimen_conyugal_beneficiario" id="regimen_conyugal_beneficiario">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="Bienes Mancomunados">Bienes Mancomunados</option>
+                            <option value="Bienes Separados">Bienes Separados</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-row" style="padding-bottom: 20px;">
@@ -346,9 +356,9 @@
                     <label class="mr-sm-2" for="capital">Apoyo Para Pago De Rendimiento NETO:? </label>
                     <select class="custom-select mr-sm-2" name="testamento" id="testamento">
                         <option selected>Elegir respuesta...</option>
-                        <option value="Con apoyo para pago de rendimiento NETO">Con apoyo para pago de rendimiento NETO
+                        <option value="Pago Neto">Pago Neto
                         </option>
-                        <option value="Sin apoyo para pago de rendimiento NETO">Sin apoyo para pago de rendimiento NETO
+                        <option value="Pago Bruto">Pago Bruto
                         </option>
                     </select>
                 </div>
