@@ -160,7 +160,7 @@
                         </select>
                     </div>
                 </div>
-                <!---->
+                <!--DATOS DEL BENEFICIARIO-->
                 <h2 class="header">Datos Del Beneficiario</h2>
                 <div class="col-auto my-1" style="Padding: 0px 30px;">
                     <label class="mr-sm-2" for="testamento" style="padding-top: 20px;">¿Cuenta Con Un
