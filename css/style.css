@@ -116,10 +116,12 @@ a {
     background-color: #acacac;
     border: none;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 #submit{
 text-align: center;
+padding-top:20px;
 }
 
 .boton:hover{

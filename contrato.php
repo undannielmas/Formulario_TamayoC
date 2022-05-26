@@ -130,8 +130,11 @@ ob_start();
 
 <?php
 $html= ob_get_clean();
-//echo $html;
+echo $html;
 
+
+
+?>
 
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
@@ -142,5 +145,3 @@ $dompdf->stream("Contrato ".$name, array('Attachment'=>'0'));
 $options = new Options();
 $options->set('isRemoteEnabled', true);
 $dompdf = new Dompdf($options);
-
-?>

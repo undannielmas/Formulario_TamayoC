@@ -407,7 +407,6 @@
                             <option value="Si">Si</option>
                             <option value="No">No</option>
                         </select>
-                        <p class="mensuals">Ver abajo la descripción para responder a esta pregunta</p>
                     </div>
                 </div>
                 <div id="submit">
