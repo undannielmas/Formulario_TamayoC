@@ -119,7 +119,7 @@
                             minlength="4" maxlength="50" size="10">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="rfc">Codigo Postal</label>
+                        <label for="cp">Codigo Postal</label>
                         <input type="text" class="form-control" name="cp" id="cp" placeholder="C.P" minlength="1"
                             maxlength="5" size="10" style="text-transform:uppercase">
                     </div>
