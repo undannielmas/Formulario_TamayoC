@@ -279,7 +279,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="municipio-beneficiario">Municipio:</label>
+                        <label for="municipio-beneficiario">Municipio / Ciudad De Nacimiento:</label>
                         <input type="text" class="form-control" name="municipio-beneficiario"
                             id="municipio-beneficiario" placeholder="Municipio..." minlength="4" maxlength="60"
                             size="10">
@@ -394,12 +394,12 @@
                 <div class="form-row" style="padding-bottom: 20px;">
                     <div class="form-group col-md-6">
                         <label for="parentesco">Parentesco Con El Beneficiario:</label>
-                        <input type="text" class="form-control" name="parentesco" id="parentesco"
+                        <input type="text" class="form-control" name="parentesco-beneficiario" id="parentesco"
                             placeholder="Parentesco...">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="ocupacion">Ocupación:</label>
-                        <input type="text" class="form-control" name="ocupacion" id="ocupacion"
+                        <input type="text" class="form-control" name="ocupacion-beneficiario" id="ocupacion"
                             placeholder="Ocupación...">
                     </div>
                 </div>

@@ -26,6 +26,27 @@ if($_POST){
     $tasa_inversion = $_POST['tasa_inversion'];
     $plazo_inversion = $_POST['plazo-inversion'];
 
+    //beneficiario
+
+    $nombre_beneficiario = $_POST['nombre-beneficiario'];
+    $born_beneficiario = $_POST['born-beneficiario'];
+    $nacionalidad_beneficiario = $_POST['nacionalidad-beneficiario'];
+    $estado_beneficiario = $_POST['estado-beneficiario'];
+    $municipio_beneficiario = $_POST['municipio-beneficiario'];
+    $calle_beneficiario = $_POST['calle-beneficiario'];
+    $numero_beneficiario = $_POST['numero-beneficiario'];
+    $colonia_beneficiario = $_POST['colonia-beneficiario'];
+    $codigo_postal_beneficiario = $_POST['cp-beneficiario'];
+    $ciudad_actual_beneficiario = $_POST['ciudad_residencia-beneficiario'];
+    $estado_actual_beneficiario = $_POST['estado-beneficiario'];
+    $curp_beneficiario = $_POST['curp-beneficiario'];
+    $rfc_beneficiario = $_POST['rfc-beneficiario'];
+    $estado_civil_beneficiario = $_POST['estado_civil_beneficiario'];
+    $regimen_conyugal_beneficiario = $_POST['regimen_conyugal_beneficiario'];
+    $parentesco_beneficiario = $_POST['parentesco-beneficiario'];
+
+
+
 }
 
 use Dompdf\Dompdf;
@@ -337,8 +358,193 @@ ob_start();
                 tomar todas las medidas necesarias frente a sus familiares o terceros para limitar la divulgación de la
                 información confidencial.
             </p>
+            <p><strong>DECIMA SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Cláusula
+                    De Integración.</span>
+            <p>
+                Este contrato establece el acuerdo completo entre <strong>“LAS PARTES”</strong>. Ninguna parte ha
+                celebrado este contrato
+                basándose en una declaración, garantía o promesa de la otra “PARTE” que no esté expresamente mencionada
+                o referida en este contrato. Esta cláusula no excluirá la responsabilidad por declaraciones
+                fraudulentas. Este contrato reemplaza cualquier acuerdo previo o entendimiento anterior entre
+                <strong>“LAS
+                    PARTES”</strong> con respecto al objeto del presente.
+            </p>
+            <p><strong>DECIMA TERCERA.-</strong><span
+                    style="padding-left: 32PX; text-decoration: underline;">Naturaleza.</span>
+            <p>
+                <strong>“LAS PARTES”</strong> reconocen que el presente Contrato es de naturaleza Civil.
+            </p>
+            <p><strong>DECIMA CUARTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Buena
+                    Fe.</span>
+            <p>
+                <strong>“LAS PARTES”</strong> convienen que para cualquier discrepancia o diferencia que surja entre las
+                mismas con
+                motivo del cumplimiento del presente contrato, buscarán solucionarlas en todo momento, con base en la
+                buena fe.
+            </p>
+            <p><strong>DECIMA QUINTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ausencia De
+                    Vicios En El Contrato.</span>
+            <p>
+                <strong>“LAS PARTES”</strong> acuerdan y reconocen que en este Contrato y sus anexos no existe error,
+                dolo, mala fe,
+                lesión, ni ningún otro vicio del consentimiento que pudiese dar lugar a su nulidad.
+            </p>
+            <p><strong>DECIMA SEXTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Unidad De
+                    Contrato.</span>
+            <p>
+                Este contrato representa el acuerdo total de <strong>“LAS PARTES”</strong> y sustituye cualquier acuerdo
+                previo, ya sea
+                verbal o por escrito habido entre ambas. Ninguna modificación de este contrato vinculará a cualquiera de
+                <strong>“LAS PARTES”</strong>, excepto que sea por escrito y suscrito por las mismas.
+            </p>
+            <p><strong>DECIMA SÉPTIMA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Cesión De
+                    Derechos.</span>
+            <p>
+                Los derechos derivados del presente Contrato podrán ser cedidos o traspasados en caso que lo indique
+                <strong>“EL
+                    MUTUANTE” a “EL MUTUATARIO”</strong> y éste último otorgue su consentimiento o bien, en caso de
+                fallecimiento de
+                <strong>“EL MUTUANTE”.</strong>
 
+                <br><br>Por otra parte, <strong>“EL MUTUANTE”</strong> manifiesta que a la presente fecha tiene
+                disposición testamentaria, y,
+                asimismo, en el presente acto <strong>“EL MUTUATARIO”</strong> otorga su consentimiento a <strong>“EL
+                    MUTUANTE”</strong> para que éste
+                designe a su <strong>“BENEFICIARIO”</strong>, mismo del que se advierten sus datos a continuación:
+            </p>
+            <ol>
+                <li style="list-style:none;">I. <?php echo $nombre_beneficiario ?>,
+                    <?php echo $nacionalidad_beneficiario ?>, mayor o menor de edad, originario
+                    de <?php echo $municipio_beneficiario ?>, Estado, mismo que ostenta el parentesco de
+                    <?php echo $parentesco_beneficiario ?> de <strong>“EL MUTUANTE”</strong>, inscrito en el
+                    Registro Federal de Contribuyentes bajo clave <?php echo $rfc_beneficiario ?> e inscrito en la Clave
+                    Única de Registro de
+                    Población bajo la clave <?php echo $curp_beneficiario?>, finalmente cuenta con con domicilio en la
+                    Calle
+                    ubicado en la Calle <?php echo $calle_beneficiario; ?>, número <?php echo $numero_beneficiario ?>,
+                    Colonia
+                    <?php echo $colonia_beneficiario ?>, C.P. <?php echo $codigo_postal_beneficiario ?>,
+                    <?php echo $ciudad_actual_beneficiario ?>,
+                    <?php echo $estado_actual_beneficiario ?>.
+                </li>
+            </ol>
+            <p>
+                Finalmente, bajo protesta de decir verdad, manifiesta <strong>“EL MUTUANTE”</strong> que su disposición
+                testamentaria no
+                contraviene lo previsto en el artículo 1368 del Código Civil Federal y lo previsto en el artículo 1265
+                del Código Civil para el Estado de Nuevo León
+            </p>
+            <p><strong>DECIMA OCTAVA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Domicilios
+                    y Notificaciones.</span>
+            <ol type="a">
+                <li>Toda clase de avisos, comunicaciones y notificaciones que haya lugar entre <strong>“LAS
+                        PARTES”</strong>, con
+                    motivo del presente contrato, se harán por escrito y deberán ser entregadas personalmente, o en su
+                    caso, por correo certificado con acuse de recibo. </li>
+                <li>
+                    Para efecto de lo dispuesto en el inciso anterior, <strong>“LAS PARTES”</strong> señalan los
+                    siguientes
+                    domicilios:
+                </li>
+                <li>
+                    Domicilio de <strong>“EL MUTUATARIO”</strong>: El ubicado en la Avenida Gómez Morín, número 900
+                    interior 61,
+                    Colonia Carrizalejo, en la ciudad de San Pedro Garza García, C.P. 66220.
+                </li>
+                <li>
+                    Domicilio de <strong>“EL MUTUANTE"</strong>: El ubicado en la Calle
+                    <?php echo $calle_beneficiario; ?>, número
+                    <?php echo $numero_beneficiario ?>,
+                    Colonia
+                    <?php echo $colonia_beneficiario ?>, C.P. <?php echo $codigo_postal_beneficiario ?>,
+                    <?php echo $ciudad_actual_beneficiario ?>,
+                    <?php echo $estado_actual_beneficiario ?>.
+                </li>
+            </ol>
+            <p><strong>DECIMA NOVENA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Aplicable Y Jurisdicción.</span>
+            <p>
+                Para la solución de cualquier controversia que pudiera surgir con motivo de la interpretación,
+                cumplimiento y ejecución del presente Contrato, <strong>“LAS PARTES”</strong> se someten a las leyes del
+                Estado de Nuevo
+                León y a la jurisdicción de los tribunales competentes en el mismo Estado, y renuncian para tal efecto a
+                cualquier otra legislación y fuero jurisdiccional que por razón de sus domicilios presentes o futuros
+                les corresponda o pudiera corresponder.
+            </p>
+            <p><strong>VIGÉSIMA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Acuerdo Único y Modificaciones.</span>
+            <p>
+            <ol type="a">
+                <li>Este Contrato contiene la totalidad del acuerdo entre <strong>“LAS PARTES”</strong>, razón por la
+                    cual <strong>“LAS
+                        PARTES”</strong> dejan sin efecto legal alguno cualquier otro acuerdo legal o escrito que hayan
+                    acordado o
+                    suscrito con fecha anterior a la de celebración de este instrumento.</li>
+                <li>
+                    Este Contrato sólo podrá ser modificado por escrito mediante convenio modificatorio firmado por “LAS
+                    PARTES”.
+                </li>
+            </ol>
+            <p><strong>VIGÉSIMA PRIMERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Existencia Y Validez Del Contrato.</span>
+            <p>
+                <strong>“LAS PARTES”</strong> convienen en que en el presente Contrato existen los elementos esenciales,
+                tales como
+                consentimiento y objeto, manifestando por otra parte, que en el mismo no existen elementos de nulidad
+                que pudieran derivar en la cancelación del presente instrumento, por lo que renuncian de manera expresa
+                al derecho y plazo que la Ley les confiere para intentar las acciones de nulidad y/o rescisión.
+            </p>
+            <p><strong>VIGÉSIMA SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Invalidez Parcial.</span>
+            <p>
+                Si cualquiera de las cláusulas de este Contrato es declarada como inválida o no ejecutable por cualquier
+                tribunal de jurisdicción competente, las demás cláusulas del presente instrumento permanecerán en vigor
+                y con plenos efectos. Cualquier cláusula de este contrato declarada parcialmente inválida o no
+                ejecutable permanecerá en vigor con plenos efectos con relación a la parte que no fue declarada inválida
+                o no ejecutable.
+            </p>
+            <p><strong>VIGÉSIMA TERCERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Interpretación.</span></p>
+            <ol type="a">
+                <li>
+                    Los encabezados de las cláusulas del presente contrato son establecidos únicamente por razones de
+                    referencia y no afectarán la interpretación de éste. Todas las referencias a “Cláusula” o
+                    “Cláusulas” se refieren a la Cláusula o a las Cláusulas correspondientes del presente Contrato.
+                </li>
+                <li>
+                    Todas las palabras utilizadas en este Contrato serán leídas como del género o número que requieran
+                    las circunstancias. Al menos que se establezca lo contrario, la palabra “incluyendo” no limita las
+                    palabras o términos a las cuales hace referencia.
+                </li>
+                <li>
+                    c) Cualquier referencia a “día” o “días” deberá entenderse por referirse a días naturales, salvo que
+                    se precise que son días hábiles.
+                </li>
+            </ol>
+            <p><strong>VIGÉSIMA CUARTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+                    Tratamiento de datos personales.</span></p>
+            <p>
+                De conformidad con las disposiciones legales contenidas en la Ley Federal de Protección de Datos
+                Personales en Posesión de los Particulares, adjunto al presente contrato se advertirá como Anexo B el
+                Aviso de Privacidad correspondiente a los datos brindados por parte de <strong>“EL MUTUANTE”</strong> en favor de <strong>“EL
+                MUTUATARIO”</strong> en relación a la celebración del presente Contrato. Mismo que deberá ser firmado de
+                conformidad por parte de <strong>“EL MUTUANTE”.</strong>
+
+                <br><br>Bien entendidas <strong>“LAS PARTES”</strong> del contenido y efectos legales del presente Contrato, lo firman por
+                triplicado en la ciudad de Ciudad, Estado, el día día de mes de año.
+            </p>
         </section>
+        <div style="display: flex; justify-content: center; text-align: center;">
+            <section style="padding-right: 100px;">
+                <p style="text-decoration: underline;"><strong>"EL MUTUANTE”</strong></p>
+                <span>Por sus propios derechos:</span>
+            </section>
+            <section style="padding-left: 100px;">
+                <p style="text-decoration: underline;"><strong>“EL MUTUATARIO”</strong></p>
+                <p>GEOFIRMUS, S.A.P.I. DE C.V.</p>
+                <p>Representada mancomunadamente en este acto por:</p>
+            </section>
+        </div>
     </div>
 </body>
 
