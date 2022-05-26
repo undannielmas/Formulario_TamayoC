@@ -339,29 +339,34 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-4">
-                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 1</label>
-                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 1:</label>
+                        <select class="custom-select mr-sm-2" name="firmante1" id="firmante1">
                             <option selected>Elegir respuesta...</option>
-                            <option value="Mario de la Rocha">Mario de la Rocha</option>
-                            <option value="Roberto Aguilar">Roberto Aguilar</option>
+                            <option value="MARIO DE LA ROCHA">MARIO DE LA ROCHA</option>
+                            <option value="MIGUEL MARÍN">MIGUEL MARÍN</option>
+                            <option value="ROBERTO AGUILAR">ROBERTO AGUILAR</option>
+                            <option value="JAIME ESCOBAR">JAIME ESCOBAR</option>
+
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Plazo De La
-                            Inversión:</label>
-                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 2:</label>
+                        <select class="custom-select mr-sm-2" name="firmante2" id="firmante2">
                             <option selected>Elegir respuesta...</option>
-                            <option value="18 Meses">18 Meses</option>
-                            <option value="24 Meses">24 Meses</option>
+                            <option value="MARIO DE LA ROCHA">MARIO DE LA ROCHA</option>
+                            <option value="MIGUEL MARÍN">MIGUEL MARÍN</option>
+                            <option value="ROBERTO AGUILAR">ROBERTO AGUILAR</option>
+                            <option value="JAIME ESCOBAR">JAIME ESCOBAR</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Plazo De La
-                            Inversión:</label>
-                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
-                            <option selected>Elegir respuesta...</option>
-                            <option value="18 Meses">18 Meses</option>
-                            <option value="24 Meses">24 Meses</option>
+                        <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 3 (Opciónal):</label>
+                        <select class="custom-select mr-sm-2" name="firmante3" id="firmante2">
+                            <option value=""></option>
+                            <option value="MARIO DE LA ROCHA">MARIO DE LA ROCHA</option>
+                            <option value="MIGUEL MARÍN">MIGUEL MARÍN</option>
+                            <option value="ROBERTO AGUILAR">ROBERTO AGUILAR</option>
+                            <option value="JAIME ESCOBAR">JAIME ESCOBAR</option>
                         </select>
                     </div>
                 </div>
