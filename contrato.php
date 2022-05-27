@@ -25,6 +25,8 @@ if($_POST){
     $inversion_letra = $_POST['inversion_letra'];
     $tasa_inversion = $_POST['tasa_inversion'];
     $plazo_inversion = $_POST['plazo-inversion'];
+    $fecha_firma = $_POST['fecha_firma'];
+    $lugar_firma = $_POST['lugar_firma'];
 
 
     $nombre_beneficiario = $_POST['nombre-beneficiario'];
@@ -415,7 +417,7 @@ ob_start();
             <ol>
                 <li style="list-style:none;">I. <?php echo $nombre_beneficiario ?>,
                     <?php echo $nacionalidad_beneficiario ?>, mayor o menor de edad, originario
-                    de <?php echo $municipio_beneficiario ?>, Estado, mismo que ostenta el parentesco de
+                    de <?php echo $municipio_beneficiario ?>, <?php echo $estado_beneficiario ?>, mismo que ostenta el parentesco de
                     <?php echo $parentesco_beneficiario ?> de <strong>“EL MUTUANTE”</strong>, inscrito en el
                     Registro Federal de Contribuyentes bajo clave <?php echo $rfc_beneficiario ?> e inscrito en la Clave
                     Única de Registro de
@@ -531,7 +533,7 @@ ob_start();
                 conformidad por parte de <strong>“EL MUTUANTE”.</strong>
 
                 <br><br>Bien entendidas <strong>“LAS PARTES”</strong> del contenido y efectos legales del presente Contrato, lo firman por
-                triplicado en la ciudad de Ciudad, Estado, el día día de mes de año.
+                triplicado en la ciudad de <?php echo $lugar_firma ?> <?php echo $fecha_firma?>.
             </p>
         </section>
         <div style="display:flex;">
@@ -557,8 +559,8 @@ ob_start();
 $html= ob_get_clean();
 echo $html;
 
-?>
 
+?>
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
 $dompdf->load_html($html);

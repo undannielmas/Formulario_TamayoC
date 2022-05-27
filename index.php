@@ -236,8 +236,8 @@
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
                             <option value="Extranjero">Extranjero</option>
-                            <option value="Mexicana">Mexicano</option>
-                            <option value="Extranjera">Extranjero</option>
+                            <option value="Mexicana">Mexicana</option>
+                            <option value="Extranjera">Extranjera</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
