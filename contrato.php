@@ -43,6 +43,7 @@ if($_POST){
     $estado_civil_beneficiario = $_POST['estado_civil_beneficiario'];
     $regimen_conyugal_beneficiario = $_POST['regimen_conyugal_beneficiario'];
     $parentesco_beneficiario = $_POST['parentesco-beneficiario'];
+    $ocupacion_beneficiario = $_POST['ocupacion-beneficiario'];
 
 
 
@@ -533,31 +534,18 @@ ob_start();
                 triplicado en la ciudad de Ciudad, Estado, el día día de mes de año.
             </p>
         </section>
-        <div style="display: flex; justify-content: center; text-align: center;">
-            <section style="padding-right: 100px;">
+        <div style="display:flex;">
+            <section style="width: 50%; text-align: center;">
                 <p style="text-decoration: underline;"><strong>"EL MUTUANTE”</strong></p>
-                <span>Por sus propios derechos:</span>
+                <p style="margin-top: -8px;">Por sus propios derechos:</p>
+                <p style="padding-top:30px"><strong><?php echo $name; ?></strong></p>
             </section>
-            <section style="padding-left: 100px;">
+            <section style="width: 50%;text-align: center;">
                 <p style="text-decoration: underline;"><strong>“EL MUTUATARIO”</strong></p>
-                <p>GEOFIRMUS, S.A.P.I. DE C.V.</p>
-                <p>Representada mancomunadamente en este acto por:</p>
-            </section>
-        </div>
-        <div style="display: flex; justify-content: center; text-align: center; padding-top:30px;">
-            <section style="padding-right: 100px;">
-                <p style="text-decoration: underline;"><strong><?php echo $name; ?></strong></p>
-            </section>
-            <section style="padding-left: 150px;">
-                <p style="text-decoration: underline;"><strong><?php echo $firmante1 ?></strong></p>
-            </section>
-        </div>
-        <div style="display: flex; justify-content: center; text-align: center; padding-top:30px;">
-            <section style="padding-right: 100px;">
-                <p style="text-decoration: underline;"></p>
-            </section>
-            <section style="padding-left: 150px;">
-                <p style="text-decoration: underline;"><strong><?php echo $firmante2 ?></strong></p>
+                <p style="margin-top: -8px;"><strong>GEOFIRMUS, S.A.P.I. DE C.V</strong></p>
+                <p style="padding-top:-8px">Representada mancomunadamente en este acto por:</p>
+                <p style="padding-top:10px"><strong><?php echo $firmante1; ?></strong></p>
+                <p style="padding-top:30px"><strong><?php echo $firmante2; ?></strong></p>
             </section>
         </div>
     </div>

@@ -556,6 +556,18 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-row" style="padding-bottom: 20px;">
+                    <div class="form-group col-md-6">
+                        <label for="parentesco">Fecha De Firma:</label>
+                        <input type="text" class="form-control" name="fecha_firma"
+                            placeholder="14 de Julio del 2022">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="ocupacion">Lugar De Firma:</label>
+                        <input type="text" class="form-control" name="lugar_firma"
+                            placeholder="'Monterrey, Nuevo León'">
+                    </div>
+                </div>
                 <div id="submit">
                     <button type="submit" class="boton">Ver Contrato</button>
                 </div>
