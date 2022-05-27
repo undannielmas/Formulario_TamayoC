@@ -201,23 +201,14 @@
                         <label for="regimen_conyugal">Regimen Conyugal (En Caso De Ser Casado):</label>
                         <select class="custom-select mr-sm-2" name="regimen_conyugal" id="regimen_conyugal">
                             <option selected>Elegir respuesta...</option>
-                            <option value="Bienes Mancomunados">Bienes Mancomunados</option>
-                            <option value="Bienes Separados">Bienes Separados</option>
+                            <option value=" bajo el régimen conygal de Bienes Mancomunados, ">Bienes Mancomunados</option>
+                            <option value=" bajo el régimen conygal de Bienes Separados, ">Bienes Separados</option>
                         </select>
                     </div>
                 </div>
 
                 <!--DATOS DEL BENEFICIARIO-->
                 <h2 class="header">Datos Del Beneficiario</h2>
-                <div class="col-auto my-1" style="Padding: 0px 30px;">
-                    <label class="mr-sm-2" for="testamento" style="padding-top: 20px;">¿Cuenta Con Un
-                        Testamento?</label>
-                    <select class="custom-select mr-sm-2" name="testamento" id="testamento">
-                        <option selected>Elegir respuesta...</option>
-                        <option value="si">Si cuenta con testamento</option>
-                        <option value="no">No cuenta con testamento</option>
-                    </select>
-                </div>
                 <div class="form-group">
                     <label for="nombre-beneficiario" style="padding-top: 20px;">Nombre Del Beneficiario:</label>
                     <input type="text" class="form-control" name="nombre-beneficiario" id="nombre-beneficiario"
@@ -407,11 +398,6 @@
                 <!--Datos sobre la inversión-->
 
                 <h2 class="header">Datos Sobre la Inversión</h2>
-                <div class="form-group">
-                    <label for="fecha-inversion">Fecha Estimada De La Inversión:</label>
-                    <input type="text" class="form-control" name="place-beneficiario" id="place-beneficiario"
-                        placeholder="DD/MM/AA">
-                </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inversion">Monto Estimado A Invertir:</label>
@@ -518,7 +504,7 @@
                     <div class="form-group col-md-6">
                         <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">¿Cuenta Con
                             Cédula de Identificación Fiscal?:</label>
-                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                        <select class="custom-select mr-sm-2" name="cedula-inversion" id="plazo-inversion">
                             <option selected>Elegir respuesta...</option>
                             <option value="Si">Si</option>
                             <option value="No">No</option>
@@ -532,9 +518,9 @@
                     <div class="form-group col-md-6">
                         <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Indique Su
                             Régimen Fiscal Actual Como PF:</label>
-                        <select class="custom-select mr-sm-2" name="plazo-inversion" id="plazo-inversion">
+                        <select class="custom-select mr-sm-2" name="regimen-inversion" id="plazo-inversion">
                             <option selected>Elegir respuesta...</option>
-                            <option value="Sueldosy Salarios">Sueldosy Salarios</option>
+                            <option value="Sueldosy Salarios">Sueldos y Salarios</option>
                             <option value="Actividad Empresarial y Profesional">Actividad Empresarial y Profesional
                             </option>
                             <option value="Arrendamiento">Arrendamiento</option>

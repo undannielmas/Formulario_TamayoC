@@ -25,6 +25,7 @@ if($_POST){
     $inversion_letra = $_POST['inversion_letra'];
     $tasa_inversion = $_POST['tasa_inversion'];
     $plazo_inversion = $_POST['plazo-inversion'];
+    $regimen_inversion = $_POST['regimen-inversion'];
     $fecha_firma = $_POST['fecha_firma'];
     $lugar_firma = $_POST['lugar_firma'];
 
@@ -101,6 +102,10 @@ ob_start();
         line-height: 12px;
 
     }
+
+    .contenedor_final{
+        display:flex;
+    }
     </style>
 
 <body>
@@ -145,8 +150,7 @@ ob_start();
             <ol type="a">
                 <li style="letter-spacing: -0.2px; line-height: 12px;">Ser <?php echo $nacionalidad; ?>, mayor de edad,
                     originario de <?php echo $ciudad ?>,
-                    <?php echo $estado_nacimiento ?>, <?php echo $estado_civil; ?> y en
-                    su caso, <?php echo $regimen_conyugal; ?>, con fecha de nacimiento del dia
+                    <?php echo $estado_nacimiento ?>, <?php echo $estado_civil; ?>,<?php echo $regimen_conyugal; ?>con fecha de nacimiento del dia
                     <?php echo $fecha_nacimiento ?>, <?php echo $ocupacion; ?>, al corriente en el pago del
                     Impuesto Sobre la Renta sin justificarlo de momento, inscrito en el Registro Federal de
                     Contribuyentes bajo la clave <span style="text-transform: uppercase;"><?php echo $rfc; ?></span> e
@@ -238,8 +242,8 @@ ob_start();
                 instrumento,
                 misma cantidad que representa el objeto del presente contrato, la cual estará sujeta a un interés
                 convencional y será devuelta a <strong>“EL MUTUANTE”</strong> con sus respectivos intereses.</p>
-            <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de "LA
-                    INVERSION".</span></p>
+            <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de <strong>"LA
+                    INVERSION".</strong></span></p>
             <p>
                 <stong>“LAS PARTES”</stong> acuerdan que <strong>“EL MUTUANTE”</strong> conviene en abonar a <strong>“EL
                     MUTUATARIO”</strong> en concepto de mutuo con
@@ -291,7 +295,7 @@ ob_start();
                     Término Del Contrato.</span>
             <p>
                 <strong>“LAS PARTES”</strong> acuerdan que el presente contrato tendrá una vigencia de
-                <?php echo $plazo_inversion; ?> meses y terminará según dicha
+                <strong><?php echo $plazo_inversion; ?> meses</strong> y terminará según dicha
                 cláusula sin necesidad de dar aviso por escrito o cualquier otra forma de desahucio a la terminación de
                 este.
             </p>
@@ -347,10 +351,10 @@ ob_start();
             <p><strong>DECIMA PRIMERA.-</strong><span
                     style="padding-left: 32PX; text-decoration: underline;">Confidencialidad.</span>
             <p>
-                “LAS PARTES” establecen que el conjunto de los comunicados que se establezcan entre “LAS PARTES” son
-                estrictamente confidenciales. En consecuencia de lo anterior, cada una de “LAS PARTES” se compromete a
+            <strong>“LAS PARTES”</strong> establecen que el conjunto de los comunicados que se establezcan entre <strong>“LAS PARTES”</strong> son
+                estrictamente confidenciales. En consecuencia de lo anterior, cada una de <strong>“LAS PARTES”</strong> se compromete a
                 preservar el carácter confidencial del contenido de los comunicados, información y documentos entregados
-                por la otra "PARTE”.
+                por la otra <strong>"PARTE”.</strong>
             </p>
             <p>
                 Asimismo, <strong>“LAS PARTES”</strong> se comprometen en no divulgar parcial o totalmente a Terceros el
@@ -365,7 +369,7 @@ ob_start();
             <p>
                 Este contrato establece el acuerdo completo entre <strong>“LAS PARTES”</strong>. Ninguna parte ha
                 celebrado este contrato
-                basándose en una declaración, garantía o promesa de la otra “PARTE” que no esté expresamente mencionada
+                basándose en una declaración, garantía o promesa de la otra <strong>“PARTE”</strong> que no esté expresamente mencionada
                 o referida en este contrato. Esta cláusula no excluirá la responsabilidad por declaraciones
                 fraudulentas. Este contrato reemplaza cualquier acuerdo previo o entendimiento anterior entre
                 <strong>“LAS
@@ -536,7 +540,7 @@ ob_start();
                 triplicado en la ciudad de <?php echo $lugar_firma ?> <?php echo $fecha_firma?>.
             </p>
         </section>
-        <div style="display:flex;">
+        <div class="contenedor_final">
             <section style="width: 50%; text-align: center;">
                 <p style="text-decoration: underline;"><strong>"EL MUTUANTE”</strong></p>
                 <p style="margin-top: -8px;">Por sus propios derechos:</p>
@@ -557,10 +561,8 @@ ob_start();
 
 <?php
 $html= ob_get_clean();
-echo $html;
+//echo $html;
 
-
-?>
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
 $dompdf->load_html($html);
@@ -570,3 +572,7 @@ $dompdf->stream("Contrato ".$name, array('Attachment'=>'0'));
 $options = new Options();
 $options->set('isRemoteEnabled', true);
 $dompdf = new Dompdf($options);
+
+
+?>
+
