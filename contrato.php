@@ -26,7 +26,6 @@ if($_POST){
     $tasa_inversion = $_POST['tasa_inversion'];
     $plazo_inversion = $_POST['plazo-inversion'];
 
-    //beneficiario
 
     $nombre_beneficiario = $_POST['nombre-beneficiario'];
     $born_beneficiario = $_POST['born-beneficiario'];
@@ -543,6 +542,22 @@ ob_start();
                 <p style="text-decoration: underline;"><strong>“EL MUTUATARIO”</strong></p>
                 <p>GEOFIRMUS, S.A.P.I. DE C.V.</p>
                 <p>Representada mancomunadamente en este acto por:</p>
+            </section>
+        </div>
+        <div style="display: flex; justify-content: center; text-align: center; padding-top:30px;">
+            <section style="padding-right: 100px;">
+                <p style="text-decoration: underline;"><strong><?php echo $name; ?></strong></p>
+            </section>
+            <section style="padding-left: 150px;">
+                <p style="text-decoration: underline;"><strong><?php echo $firmante1 ?></strong></p>
+            </section>
+        </div>
+        <div style="display: flex; justify-content: center; text-align: center; padding-top:30px;">
+            <section style="padding-right: 100px;">
+                <p style="text-decoration: underline;"></p>
+            </section>
+            <section style="padding-left: 150px;">
+                <p style="text-decoration: underline;"><strong><?php echo $firmante2 ?></strong></p>
             </section>
         </div>
     </div>
