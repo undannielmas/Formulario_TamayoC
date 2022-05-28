@@ -209,16 +209,21 @@
 
                 <!--DATOS DEL BENEFICIARIO-->
                 <h2 class="header">Datos Del Beneficiario</h2>
-                <div class="form-group">
-                    <label for="nombre-beneficiario" style="padding-top: 20px;">Nombre Del Beneficiario:</label>
-                    <input type="text" class="form-control" name="nombre-beneficiario" id="nombre-beneficiario"
-                        placeholder="Nombre Completo">
-                </div>
-                <div class="form-group">
-                    <label class="select" for="born-beneficiario">Fecha De Nacimiento:</label>
-                    <input type="text" class="form-control" name="born-beneficiario" id="born-beneficiario"
-                        placeholder="Ejemplo '22 de Enero de 1999'">
-                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                        <label for="nombre-beneficiario">Nombre Del Beneficiario:</label>
+                        <input type="text" class="form-control" name="nombre-beneficiario"
+                            placeholder="Nombre Completo">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="mayoria-edad">Es Mayor De Edad?: </label>
+                        <select class="custom-select mr-sm-2" name="mayoria-edad">
+                            <option selected>Elegir respuesta...</option>
+                            <option value="Mayor de edad">Si</option>
+                            <option value="Menor de edad">No</option>
+                        </select>
+                    </div>
+                </div>                
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="nacionalidad-beneficiario">Nacionalidad:</label>
@@ -227,8 +232,6 @@
                             <option selected>Elegir respuesta...</option>
                             <option value="Mexicano">Mexicano</option>
                             <option value="Extranjero">Extranjero</option>
-                            <option value="Mexicana">Mexicana</option>
-                            <option value="Extranjera">Extranjera</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
@@ -450,7 +453,7 @@
                             (Opciónal):</label>
                         <select class="custom-select mr-sm-2" name="firmante3" id="firmante2">
                             <option value=""></option>
-                            <option value="MARIO DE LA ROCHA">MARIO DE LA ROCHA</option>
+                            <option value="MARIO DE LA ROCHA ">MARIO DE LA ROCHA</option>
                             <option value="MIGUEL MARÍN">MIGUEL MARÍN</option>
                             <option value="ROBERTO AGUILAR">ROBERTO AGUILAR</option>
                             <option value="JAIME ESCOBAR">JAIME ESCOBAR</option>

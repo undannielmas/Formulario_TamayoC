@@ -31,7 +31,7 @@ if($_POST){
 
 
     $nombre_beneficiario = $_POST['nombre-beneficiario'];
-    $born_beneficiario = $_POST['born-beneficiario'];
+    $edad_beneficiario = $_POST['mayoria-edad'];
     $nacionalidad_beneficiario = $_POST['nacionalidad-beneficiario'];
     $estado_beneficiario = $_POST['estado-beneficiario'];
     $municipio_beneficiario = $_POST['municipio-beneficiario'];
@@ -47,6 +47,7 @@ if($_POST){
     $regimen_conyugal_beneficiario = $_POST['regimen_conyugal_beneficiario'];
     $parentesco_beneficiario = $_POST['parentesco-beneficiario'];
     $ocupacion_beneficiario = $_POST['ocupacion-beneficiario'];
+    $mayoria_edad = $_POST['mayoria-edad'];
 
 
 
@@ -72,7 +73,7 @@ ob_start();
         color: black;
         text-align: justify;
         padding: 0 60px;
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: -0.2px;
         font-family: Arial, Helvetica, sans-serif;
 
@@ -103,17 +104,17 @@ ob_start();
 
     }
 
-    .contenedor_final{
-        display:flex;
+    .contenedor_final {
+        display: flex;
     }
     </style>
 
 <body>
     <div class="container">
-        <section style="padding-top: 20px; line-height: 12px;"><span style="text-transform: uppercase;"><span
+        <section style="padding-top: 20px; font-size:12px; line-height: 12px;"><span style="text-transform: uppercase;"><span
                     style="text-decoration: underline;"><strong>CONTRATO DE
                         MUTUO CON INTERÉS</span></strong> (EL
-                “CONTRATO") QUE CELEBRAN POR SUS PROPIOS DERECHOS <strong> <?php echo $name; ?></strong>, A QUIEN EN LO
+                “CONTRATO") QUE CELEBRA POR SUS PROPIOS DERECHOS <strong> <?php echo $name; ?></strong>, A QUIEN EN LO
                 SUCESIVO SE LE
                 DENOMINARÁ COMO <strong>“EL MUTUANTE”</strong>; Y POR OTRA PARTE LA SOCIEDAD DENOMINADA
                 <strong>GEOFIRMUS, S.A.P.I. DE C.V.</strong>,
@@ -127,16 +128,17 @@ ob_start();
                 DECLARACIONES Y CLÁUSULAS:
             </span></section>
 
-        <h3 style="text-align: center; text-decoration: underline;
-        ">GLOSARIO DE TÉRMINOS </h3>
+        <h3 style="text-align: center; text-decoration: underline;">GLOSARIO DE TÉRMINOS </h3>
 
         <section style="line-height: 12px; letter-spacing: -0.2px;">
             <ol type="1">
-                <li style="line-height: 12px;">“EL MUTUANTE”: Persona física o moral que otorga en mutuo con interés una
+                <li style="line-height: 12px;"><strong>“EL MUTUANTE”</strong>: Persona física o moral que otorga en
+                    mutuo con interés una
                     cantidad determinada de
                     dinero en favor de otra persona física o moral. Dicha cantidad al ser otorgada en mutuo con interés
                     debe ser liquidada en un plazo de tiempo determinado y bajo un interés legal o convencional.
-                <li>“BENEFICIARIO”: Persona física de genero masculino o femenino que designa “EL MUTUANTE” en
+                <li><strong>“BENEFICIARIO”</strong>: Persona física de genero masculino o femenino que designa
+                    <strong>“EL MUTUANTE”</strong> en
                     relación a la cláusula de cesión de derechos advertida en el presente instrumento.
             </ol>
         </section>
@@ -150,7 +152,8 @@ ob_start();
             <ol type="a">
                 <li style="letter-spacing: -0.2px; line-height: 12px;">Ser <?php echo $nacionalidad; ?>, mayor de edad,
                     originario de <?php echo $ciudad ?>,
-                    <?php echo $estado_nacimiento ?>, <?php echo $estado_civil; ?>,<?php echo $regimen_conyugal; ?>con fecha de nacimiento del dia
+                    <?php echo $estado_nacimiento ?>, <?php echo $estado_civil; ?>,<?php echo $regimen_conyugal; ?>con
+                    fecha de nacimiento del dia
                     <?php echo $fecha_nacimiento ?>, <?php echo $ocupacion; ?>, al corriente en el pago del
                     Impuesto Sobre la Renta sin justificarlo de momento, inscrito en el Registro Federal de
                     Contribuyentes bajo la clave <span style="text-transform: uppercase;"><?php echo $rfc; ?></span> e
@@ -172,7 +175,7 @@ ob_start();
                         MUTUATARIO”</strong>
                     en los términos y condiciones previstos en el presente contrato.
             </ol>
-            <p style="text-align: center;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de sus apoderados,
+            <p style="text-align: center;margin-top: -8px;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de sus apoderados,
                 bajo protesta de decir verdad:</p>
             <ol type="a">
                 <li>Que su representada es una sociedad anónima constituida conforme a las leyes de la República
@@ -215,9 +218,9 @@ ob_start();
                     los términos y condiciones previstos en el presente contrato.</li>
             </ol>
             <div style="padding-left: 50px;"">
-            <p style=" text-align: left; font-size:12px;">III. Declaran <strong>“LAS PARTES”</strong> por sus propios
+            <p style=" text-align: left; font-size:10.6px;margin-top: -15px;"">III. Declaran <strong>“LAS PARTES”</strong> por sus propios
                 derechos y a
-                través de sus apoderados,<br> bajo protesta de decir verdad:</p>
+                través de sus apoderados, bajo protesta de decir verdad:</p>
             </div>
             <ol type="a">
                 <li>a) Que se reconocen mutuamente sus respectivas capacidades para celebrar este contrato, y que lo
@@ -242,8 +245,9 @@ ob_start();
                 instrumento,
                 misma cantidad que representa el objeto del presente contrato, la cual estará sujeta a un interés
                 convencional y será devuelta a <strong>“EL MUTUANTE”</strong> con sus respectivos intereses.</p>
-            <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de <strong>"LA
-                    INVERSION".</strong></span></p>
+            <p><strong>SEGUNDA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Entrega de
+                    <strong>"LA
+                        INVERSION".</strong></span></p>
             <p>
                 <stong>“LAS PARTES”</stong> acuerdan que <strong>“EL MUTUANTE”</strong> conviene en abonar a <strong>“EL
                     MUTUATARIO”</strong> en concepto de mutuo con
@@ -295,7 +299,7 @@ ob_start();
                     Término Del Contrato.</span>
             <p>
                 <strong>“LAS PARTES”</strong> acuerdan que el presente contrato tendrá una vigencia de
-                <strong><?php echo $plazo_inversion; ?> meses</strong> y terminará según dicha
+                <strong><?php echo $plazo_inversion; ?>,</strong> y terminará según dicha
                 cláusula sin necesidad de dar aviso por escrito o cualquier otra forma de desahucio a la terminación de
                 este.
             </p>
@@ -304,7 +308,7 @@ ob_start();
                 lo que en ningún
                 momento se podrá dar por cancelado el presente contrato hasta que termine la vigencia del mismo.
             </p>
-            <p><strong>SEXTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Derechos Y
+            <p style="padding-top:20px;"><strong>SEXTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Derechos Y
                     Obligaciones De <strong>“EL MUTUANTE”</strong>.</span>
             <p>
                 <strong>“EL MUTUANTE”</strong> tendrá derecho a solicitar a <strong>“EL MUTUATARIO”</strong> la
@@ -351,8 +355,10 @@ ob_start();
             <p><strong>DECIMA PRIMERA.-</strong><span
                     style="padding-left: 32PX; text-decoration: underline;">Confidencialidad.</span>
             <p>
-            <strong>“LAS PARTES”</strong> establecen que el conjunto de los comunicados que se establezcan entre <strong>“LAS PARTES”</strong> son
-                estrictamente confidenciales. En consecuencia de lo anterior, cada una de <strong>“LAS PARTES”</strong> se compromete a
+                <strong>“LAS PARTES”</strong> establecen que el conjunto de los comunicados que se establezcan entre
+                <strong>“LAS PARTES”</strong> son
+                estrictamente confidenciales. En consecuencia de lo anterior, cada una de <strong>“LAS PARTES”</strong>
+                se compromete a
                 preservar el carácter confidencial del contenido de los comunicados, información y documentos entregados
                 por la otra <strong>"PARTE”.</strong>
             </p>
@@ -369,7 +375,8 @@ ob_start();
             <p>
                 Este contrato establece el acuerdo completo entre <strong>“LAS PARTES”</strong>. Ninguna parte ha
                 celebrado este contrato
-                basándose en una declaración, garantía o promesa de la otra <strong>“PARTE”</strong> que no esté expresamente mencionada
+                basándose en una declaración, garantía o promesa de la otra <strong>“PARTE”</strong> que no esté
+                expresamente mencionada
                 o referida en este contrato. Esta cláusula no excluirá la responsabilidad por declaraciones
                 fraudulentas. Este contrato reemplaza cualquier acuerdo previo o entendimiento anterior entre
                 <strong>“LAS
@@ -419,19 +426,17 @@ ob_start();
                 designe a su <strong>“BENEFICIARIO”</strong>, mismo del que se advierten sus datos a continuación:
             </p>
             <ol>
-                <li style="list-style:none;">I. <?php echo $nombre_beneficiario ?>,
-                    <?php echo $nacionalidad_beneficiario ?>, mayor o menor de edad, originario
-                    de <?php echo $municipio_beneficiario ?>, <?php echo $estado_beneficiario ?>, mismo que ostenta el parentesco de
-                    <?php echo $parentesco_beneficiario ?> de <strong>“EL MUTUANTE”</strong>, inscrito en el
-                    Registro Federal de Contribuyentes bajo clave <?php echo $rfc_beneficiario ?> e inscrito en la Clave
+                <li style="list-style:none;">I. <strong><?php echo $nombre_beneficiario ?></strong>,
+                <strong><?php echo $nacionalidad_beneficiario ?></strong>, <strong><?php echo $mayoria_edad ?></strong>, originario
+                    de <strong><?php echo $municipio_beneficiario ?></strong>, <strong><?php echo $estado_beneficiario ?></strong>, mismo que ostenta el
+                    parentesco de
+                    <strong><?php echo $parentesco_beneficiario ?></strong> de <strong>“EL MUTUANTE”</strong>, inscrito en el
+                    Registro Federal de Contribuyentes bajo clave <strong><?php echo $rfc_beneficiario ?></strong> e inscrito en la Clave
                     Única de Registro de
-                    Población bajo la clave <?php echo $curp_beneficiario?>, finalmente cuenta con con domicilio en la
-                    Calle
-                    ubicado en la Calle <?php echo $calle_beneficiario; ?>, número <?php echo $numero_beneficiario ?>,
+                    Población bajo la clave <strong><?php echo $curp_beneficiario?></strong>, finalmente cuenta con con domicilio en la Calle <strong><?php echo $calle_beneficiario; ?></strong>, número <strong><?php echo $numero_beneficiario ?></strong>,
                     Colonia
-                    <?php echo $colonia_beneficiario ?>, C.P. <?php echo $codigo_postal_beneficiario ?>,
-                    <?php echo $ciudad_actual_beneficiario ?>,
-                    <?php echo $estado_actual_beneficiario ?>.
+                    <strong><?php echo $colonia_beneficiario ?></strong>, C.P. <strong><?php echo $codigo_postal_beneficiario ?></strong>,
+                    <strong><?php echo $estado_actual_beneficiario ?></strong>.
                 </li>
             </ol>
             <p>
@@ -509,7 +514,7 @@ ob_start();
                 ejecutable permanecerá en vigor con plenos efectos con relación a la parte que no fue declarada inválida
                 o no ejecutable.
             </p>
-            <p><strong>VIGÉSIMA TERCERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+            <p style="padding-top:90px;"><strong>VIGÉSIMA TERCERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
                     Interpretación.</span></p>
             <ol type="a">
                 <li>
@@ -532,11 +537,14 @@ ob_start();
             <p>
                 De conformidad con las disposiciones legales contenidas en la Ley Federal de Protección de Datos
                 Personales en Posesión de los Particulares, adjunto al presente contrato se advertirá como Anexo B el
-                Aviso de Privacidad correspondiente a los datos brindados por parte de <strong>“EL MUTUANTE”</strong> en favor de <strong>“EL
-                MUTUATARIO”</strong> en relación a la celebración del presente Contrato. Mismo que deberá ser firmado de
+                Aviso de Privacidad correspondiente a los datos brindados por parte de <strong>“EL MUTUANTE”</strong> en
+                favor de <strong>“EL
+                    MUTUATARIO”</strong> en relación a la celebración del presente Contrato. Mismo que deberá ser
+                firmado de
                 conformidad por parte de <strong>“EL MUTUANTE”.</strong>
 
-                <br><br>Bien entendidas <strong>“LAS PARTES”</strong> del contenido y efectos legales del presente Contrato, lo firman por
+                <br><br>Bien entendidas <strong>“LAS PARTES”</strong> del contenido y efectos legales del presente
+                Contrato, lo firman por
                 triplicado en la ciudad de <?php echo $lugar_firma ?> <?php echo $fecha_firma?>.
             </p>
         </section>
@@ -572,7 +580,6 @@ $dompdf->stream("Contrato ".$name, array('Attachment'=>'0'));
 $options = new Options();
 $options->set('isRemoteEnabled', true);
 $dompdf = new Dompdf($options);
-
 
 ?>
 
