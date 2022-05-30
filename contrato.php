@@ -107,12 +107,23 @@ ob_start();
     .contenedor_final {
         display: flex;
     }
+
+    .default {
+        width: 100%;
+        text-align: center;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+
     </style>
 
 <body>
     <div class="container">
-        <section style="padding-top: 20px; font-size:12px; line-height: 12px;"><span style="text-transform: uppercase;"><span
-                    style="text-decoration: underline;"><strong>CONTRATO DE
+        <section style="padding-top: 20px; font-size:12px; line-height: 12px;"><span
+                style="text-transform: uppercase;"><span style="text-decoration: underline;"><strong>CONTRATO DE
                         MUTUO CON INTERÉS</span></strong> (EL
                 “CONTRATO") QUE CELEBRA POR SUS PROPIOS DERECHOS <strong> <?php echo $name; ?></strong>, A QUIEN EN LO
                 SUCESIVO SE LE
@@ -175,7 +186,8 @@ ob_start();
                         MUTUATARIO”</strong>
                     en los términos y condiciones previstos en el presente contrato.
             </ol>
-            <p style="text-align: center;margin-top: -8px;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de sus apoderados,
+            <p style="text-align: center;margin-top: -8px;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de
+                sus apoderados,
                 bajo protesta de decir verdad:</p>
             <ol type="a">
                 <li>Que su representada es una sociedad anónima constituida conforme a las leyes de la República
@@ -218,7 +230,8 @@ ob_start();
                     los términos y condiciones previstos en el presente contrato.</li>
             </ol>
             <div style="padding-left: 50px;"">
-            <p style=" text-align: left; font-size:10.6px;margin-top: -15px;"">III. Declaran <strong>“LAS PARTES”</strong> por sus propios
+            <p style=" text-align: left; font-size:10.6px;margin-top: -15px;"">III. Declaran <strong>“LAS
+                    PARTES”</strong> por sus propios
                 derechos y a
                 través de sus apoderados, bajo protesta de decir verdad:</p>
             </div>
@@ -308,7 +321,8 @@ ob_start();
                 lo que en ningún
                 momento se podrá dar por cancelado el presente contrato hasta que termine la vigencia del mismo.
             </p>
-            <p style="padding-top:20px;"><strong>SEXTA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Derechos Y
+            <p style="padding-top:20px;"><strong>SEXTA.-</strong><span
+                    style="padding-left: 32PX; text-decoration: underline;">Derechos Y
                     Obligaciones De <strong>“EL MUTUANTE”</strong>.</span>
             <p>
                 <strong>“EL MUTUANTE”</strong> tendrá derecho a solicitar a <strong>“EL MUTUATARIO”</strong> la
@@ -427,15 +441,22 @@ ob_start();
             </p>
             <ol>
                 <li style="list-style:none;">I. <strong><?php echo $nombre_beneficiario ?></strong>,
-                <strong><?php echo $nacionalidad_beneficiario ?></strong>, <strong><?php echo $mayoria_edad ?></strong>, originario
-                    de <strong><?php echo $municipio_beneficiario ?></strong>, <strong><?php echo $estado_beneficiario ?></strong>, mismo que ostenta el
+                    <strong><?php echo $nacionalidad_beneficiario ?></strong>,
+                    <strong><?php echo $mayoria_edad ?></strong>, originario
+                    de <strong><?php echo $municipio_beneficiario ?></strong>,
+                    <strong><?php echo $estado_beneficiario ?></strong>, mismo que ostenta el
                     parentesco de
-                    <strong><?php echo $parentesco_beneficiario ?></strong> de <strong>“EL MUTUANTE”</strong>, inscrito en el
-                    Registro Federal de Contribuyentes bajo clave <strong><?php echo $rfc_beneficiario ?></strong> e inscrito en la Clave
+                    <strong><?php echo $parentesco_beneficiario ?></strong> de <strong>“EL MUTUANTE”</strong>, inscrito
+                    en el
+                    Registro Federal de Contribuyentes bajo clave <strong><?php echo $rfc_beneficiario ?></strong> e
+                    inscrito en la Clave
                     Única de Registro de
-                    Población bajo la clave <strong><?php echo $curp_beneficiario?></strong>, finalmente cuenta con con domicilio en la Calle <strong><?php echo $calle_beneficiario; ?></strong>, número <strong><?php echo $numero_beneficiario ?></strong>,
+                    Población bajo la clave <strong><?php echo $curp_beneficiario?></strong>, finalmente cuenta con con
+                    domicilio en la Calle <strong><?php echo $calle_beneficiario; ?></strong>, número
+                    <strong><?php echo $numero_beneficiario ?></strong>,
                     Colonia
-                    <strong><?php echo $colonia_beneficiario ?></strong>, C.P. <strong><?php echo $codigo_postal_beneficiario ?></strong>,
+                    <strong><?php echo $colonia_beneficiario ?></strong>, C.P.
+                    <strong><?php echo $codigo_postal_beneficiario ?></strong>,
                     <strong><?php echo $estado_actual_beneficiario ?></strong>.
                 </li>
             </ol>
@@ -514,7 +535,8 @@ ob_start();
                 ejecutable permanecerá en vigor con plenos efectos con relación a la parte que no fue declarada inválida
                 o no ejecutable.
             </p>
-            <p style="padding-top:90px;"><strong>VIGÉSIMA TERCERA.-</strong><span style="padding-left: 32PX; text-decoration: underline;">Ley
+            <p style="padding-top:120px;"><strong>VIGÉSIMA TERCERA.-</strong><span
+                    style="padding-left: 32PX; text-decoration: underline;">Ley
                     Interpretación.</span></p>
             <ol type="a">
                 <li>
@@ -548,19 +570,35 @@ ob_start();
                 triplicado en la ciudad de <?php echo $lugar_firma ?> <?php echo $fecha_firma?>.
             </p>
         </section>
-        <div class="contenedor_final">
-            <section style="width: 50%; text-align: center;">
-                <p style="text-decoration: underline;"><strong>"EL MUTUANTE”</strong></p>
-                <p style="margin-top: -8px;">Por sus propios derechos:</p>
-                <p style="padding-top:30px"><strong><?php echo $name; ?></strong></p>
-            </section>
-            <section style="width: 50%;text-align: center;">
-                <p style="text-decoration: underline;"><strong>“EL MUTUATARIO”</strong></p>
-                <p style="margin-top: -8px;"><strong>GEOFIRMUS, S.A.P.I. DE C.V</strong></p>
-                <p style="padding-top:-8px">Representada mancomunadamente en este acto por:</p>
-                <p style="padding-top:10px"><strong><?php echo $firmante1; ?></strong></p>
-                <p style="padding-top:30px"><strong><?php echo $firmante2; ?></strong></p>
-            </section>
+        <div>
+            <div class="center">
+                <table class="default">
+                    <tr>
+                        <td>
+                            <p style="text-decoration: underline;"><strong>"EL MUTUANTE”</strong></p>
+                            <p style="margin-top: -8px;">Por sus propios derechos:</p>
+                            <p style="padding-top:10px"><strong><?php echo $name; ?></strong></p>
+                        </td>
+                        <td>
+                        <p style="text-decoration: underline;padding-top: 34px;"><strong>“EL MUTUATARIO”</strong></p>
+                        <p style="margin-top: -8px;"><strong>GEOFIRMUS, S.A.P.I. DE C.V</strong></p>
+                        <p style="margin-top: -10px;">Representada mancomunadamente en este acto por:</p>
+                        <p style="padding-top:10px"><strong><?php echo $firmante1; ?></strong></p>
+                        <p style="padding-top:30px"><strong><?php echo $firmante2; ?></strong></p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
 </body>
@@ -580,6 +618,7 @@ $dompdf->stream("Contrato ".$name, array('Attachment'=>'0'));
 $options = new Options();
 $options->set('isRemoteEnabled', true);
 $dompdf = new Dompdf($options);
+
 
 ?>
 
