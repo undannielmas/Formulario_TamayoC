@@ -198,7 +198,7 @@ ob_start();
                     abril de 2019. Con Registro Federal de Contribuyentes GEO1903253W6, y domicilio fiscal ubicado en
                     Avenida Gómez Morín, número 900 interior 61, Colonia Carrizalejo, en la ciudad de San Pedro Garza,
                     García, Nuevo León, C.P. 66220.
-                <li>b) Que justifican su personalidad con la Escritura Pública número 45,316, de fecha 16 de febrero de
+                <li>Que justifican su personalidad con la Escritura Pública número 45,316, de fecha 16 de febrero de
                     2022, otorgada ante la fe del Licenciado Luis Carlos Guerra Aguiñaga, Notario Público Suplente en
                     funciones adscrito a la Notaría Pública número 147, en la ciudad de San Pedro Garza García, Nuevo
                     León, inscrita en el Registro Público de Comercio bajo el folio mercantil electrónico número
@@ -550,7 +550,7 @@ ob_start();
                     palabras o términos a las cuales hace referencia.
                 </li>
                 <li>
-                    c) Cualquier referencia a “día” o “días” deberá entenderse por referirse a días naturales, salvo que
+                    Cualquier referencia a “día” o “días” deberá entenderse por referirse a días naturales, salvo que
                     se precise que son días hábiles.
                 </li>
             </ol>
