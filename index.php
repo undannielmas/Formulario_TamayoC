@@ -431,10 +431,10 @@
                         <label class="mr-sm-2" for="plazo-inversion" style="padding-top: 20px;">Firmante 1:</label>
                         <select class="custom-select mr-sm-2" name="firmante1" id="firmante1">
                             <option selected>Elegir respuesta...</option>
-                            <option value="MARIO DE LA ROCHA">MARIO DE LA ROCHA</option>
-                            <option value="MIGUEL MARÍN">MIGUEL MARÍN</option>
+                            <option value="MARIO GILBERTO DE LA ROCHA PARRA">MARIO DE LA ROCHA</option>
+                            <option value="MIGUEL DARIO RODRIGUEZ MARIN">MIGUEL MARÍN</option>
                             <option value="ROBERTO AGUILAR">ROBERTO AGUILAR</option>
-                            <option value="JAIME ESCOBAR">JAIME ESCOBAR</option>
+                            <option value="JAIME OSVALDO ESCOBAR">JAIME ESCOBAR</option>
 
                         </select>
                     </div>
