@@ -49,8 +49,6 @@ if($_POST){
     $ocupacion_beneficiario = $_POST['ocupacion-beneficiario'];
     $mayoria_edad = $_POST['mayoria-edad'];
 
-
-
 }
 
 use Dompdf\Dompdf;
@@ -440,24 +438,24 @@ ob_start();
                 designe a su <strong>“BENEFICIARIO”</strong>, mismo del que se advierten sus datos a continuación:
             </p>
             <ol>
-                <li style="list-style:none;">I. <strong><?php echo $nombre_beneficiario ?></strong>,
-                    <strong><?php echo $nacionalidad_beneficiario ?></strong>,
-                    <strong><?php echo $mayoria_edad ?></strong>, originario
-                    de <strong><?php echo $municipio_beneficiario ?></strong>,
-                    <strong><?php echo $estado_beneficiario ?></strong>, mismo que ostenta el
+                <li style="list-style:none;">I.<?php echo $nombre_beneficiario ?>,
+                    <?php echo $nacionalidad_beneficiario ?>,
+                    <?php echo $mayoria_edad ?>, originario
+                    de <?php echo $municipio_beneficiario ?>,
+                    <?php echo $estado_beneficiario ?>, mismo que ostenta el
                     parentesco de
-                    <strong><?php echo $parentesco_beneficiario ?></strong> de <strong>“EL MUTUANTE”</strong>, inscrito
+                    <?php echo $parentesco_beneficiario ?> de <strong>“EL MUTUANTE”</strong>, inscrito
                     en el
-                    Registro Federal de Contribuyentes bajo clave <strong><?php echo $rfc_beneficiario ?></strong> e
+                    Registro Federal de Contribuyentes bajo clave <?php echo $rfc_beneficiario ?> e
                     inscrito en la Clave
                     Única de Registro de
-                    Población bajo la clave <strong><?php echo $curp_beneficiario?></strong>, finalmente cuenta con con
-                    domicilio en la Calle <strong><?php echo $calle_beneficiario; ?></strong>, número
-                    <strong><?php echo $numero_beneficiario ?></strong>,
+                    Población bajo la clave <?php echo $curp_beneficiario?>, finalmente cuenta con con
+                    domicilio en la Calle <?php echo $calle_beneficiario; ?>, número
+                    <?php echo $numero_beneficiario ?>,
                     Colonia
-                    <strong><?php echo $colonia_beneficiario ?></strong>, C.P.
-                    <strong><?php echo $codigo_postal_beneficiario ?></strong>,
-                    <strong><?php echo $estado_actual_beneficiario ?></strong>.
+                    <?php echo $colonia_beneficiario ?>, C.P.
+                    <?php echo $codigo_postal_beneficiario ?>,
+                    <?php echo $estado_actual_beneficiario ?>.
                 </li>
             </ol>
             <p>
@@ -607,7 +605,9 @@ ob_start();
 
 <?php
 $html= ob_get_clean();
-//echo $html;
+echo $html;
+
+?>
 
 require 'vendor/autoload.php';
 $dompdf = new Dompdf();
@@ -618,7 +618,3 @@ $dompdf->stream("Contrato ".$name, array('Attachment'=>'0'));
 $options = new Options();
 $options->set('isRemoteEnabled', true);
 $dompdf = new Dompdf($options);
-
-
-?>
-
