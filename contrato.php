@@ -70,8 +70,8 @@ ob_start();
     .container {
         color: black;
         text-align: justify;
-        padding: 0 60px;
-        font-size: 11px;
+        margin: 0px 90px;
+        font-size: 11.6px;
         letter-spacing: -0.2px;
         font-family: Arial, Helvetica, sans-serif;
 
@@ -152,11 +152,10 @@ ob_start();
             </ol>
         </section>
 
-        <h3 style="text-align: center; text-decoration: underline;
-        ">DECLARACIONES </h3>
+        <h3 style="text-align: center; text-decoration: underline; margin-top:-10px;">DECLARACIONES </h3>
 
         <section>
-            <p style="text-align: center;">I. Declara <strong>“EL MUTUANTE”</strong> por su propio derecho, bajo
+            <p style="text-align: left;">I. Declara <strong>“EL MUTUANTE”</strong> por su propio derecho, bajo
                 protesta de decir verdad:</p>
             <ol type="a">
                 <li style="letter-spacing: -0.2px; line-height: 12px;">Ser <?php echo $nacionalidad; ?>, mayor de edad,
@@ -184,7 +183,7 @@ ob_start();
                         MUTUATARIO”</strong>
                     en los términos y condiciones previstos en el presente contrato.
             </ol>
-            <p style="text-align: center;margin-top: -8px;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de
+            <p style="text-align:left; margin-top: -8px;">II. Manifiesta <strong>“EL MUTUATARIO”</strong> a través de
                 sus apoderados,
                 bajo protesta de decir verdad:</p>
             <ol type="a">
@@ -194,7 +193,7 @@ ob_start();
                     Nuevo León, cuyo primer testimonio ha quedado inscrito en el Registro Público del Comercio en el
                     folio mercantil electrónico número 2019031718, en la ciudad de Monterrey, Nuevo León el día 30 de
                     abril de 2019. Con Registro Federal de Contribuyentes GEO1903253W6, y domicilio fiscal ubicado en
-                    Avenida Gómez Morín, número 900 interior 61, Colonia Carrizalejo, en la ciudad de San Pedro Garza,
+                    Avenida Gómez Morín, número 900 interior 61, Colonia Carrizalejo, en la ciudad de San Pedro Garza
                     García, Nuevo León, C.P. 66220.
                 <li>Que justifican su personalidad con la Escritura Pública número 45,316, de fecha 16 de febrero de
                     2022, otorgada ante la fe del Licenciado Luis Carlos Guerra Aguiñaga, Notario Público Suplente en
@@ -202,8 +201,7 @@ ob_start();
                     León, inscrita en el Registro Público de Comercio bajo el folio mercantil electrónico número
                     N-2019031718 en la ciudad de Monterrey, Nuevo León el día 22 de febrero de 2022. Mismas facultades
                     que a la fecha no les han sido revocadas ni limitadas de forma alguna y bajo ningún título.
-                <li>Su objeto social comprende, entre otras actividades, la captación de recursos para el desarrollo
-                    de diversos desarrollos en sus diferentes modalidades.
+                <li>Su objeto social comprende, entre otras actividades, la captación de recursos de manera privada para el desarrollo de diversos desarrollos en sus diferentes modalidades.
                 <li>Se destinará la cantidad otorgada en mutuo con interés en el siguiente bien inmueble (en lo
                     sucesivo<strong> “EL INMUEBLE”</strong>):
                     <p><strong>“Fracción “A” del predio conocido como la “Pichancha” que forma parte de la finca rustica
@@ -211,13 +209,13 @@ ob_start();
                             Alvarado Veracruz, de Ignacio de la Llave con superficie de 625,572.108 M2 (SEISCIENTOS
                             VEINTICINCO MIL QUINIENTOS SETENTA Y DOS METROS CUADRADOS CON CIENTO OCHO MILIMETROS
                             CUADRADOS)”</strong></p>
-                <li>Que <strong>“EL INMUEBLE”</strong> se encuentra al corriente en el pago del impuesto predial de la
+                <li style="margin-top:-13px;">Que <strong>“EL INMUEBLE”</strong> se encuentra al corriente en el pago del impuesto predial de la
                     cuenta
                     Catastral Número <strong>04-011-028-00-002-161-00-000-2</strong> del Municipio de Alvarado,
                     Veracruz.</li>
                 <li>Manifiesta en relación con lo señalado por la Ley Nacional de Extinción de Dominio, lo siguiente:
                 </li>
-                <p>i. Que <strong>“EL INMUEBLE”</strong> objeto de la presente operación no es, ni ha sido, instrumento,
+                <p style="margin-top:-4px; padding-left:20px;">i. Que <strong>“EL INMUEBLE”</strong> objeto de la presente operación no es, ni ha sido, instrumento,
                     objeto o
                     producto de delito(s) previstos en el cuarto párrafo del artículo 22 de la Constitución Política de
                     los Estados Unidos Mexicanos, ni de ninguno de los previstos en el tercer y cuarto párrafo del
@@ -242,7 +240,7 @@ ob_start();
                     renuncia formal y expresa a impugnaciones presentes o futuras respecto al carácter y personalidad
                     con la que comparecen y en relación con el presente acto jurídico</li>
             </ol>
-            <p style="text-align: center;">Tomando en cuenta lo anteriormente declarado, <strong>“LAS PARTES”</strong>
+            <p style="text-align: center; font-size:12px; margin-top:-10px;">Tomando en cuenta lo anteriormente declarado, <strong>“LAS PARTES”</strong><br>
                 acuerdan someterse al tenor de las siguientes:</p>
         </section>
         <h3 style="text-align: center; text-decoration: underline;
@@ -262,7 +260,7 @@ ob_start();
             <p>
                 <stong>“LAS PARTES”</stong> acuerdan que <strong>“EL MUTUANTE”</strong> conviene en abonar a <strong>“EL
                     MUTUATARIO”</strong> en concepto de mutuo con
-                interés el importe de $<strong><?php echo $inversion; ?> M.N. (<?php echo $inversion_letra; ?> 00/100
+                interés el importe de $<strong><?php echo $inversion; ?> Pesos, M.N. (<?php echo $inversion_letra; ?> 00/100
                     Moneda
                     Nacional)</strong>, cifra que en lo sucesivo y dentro de este texto se le denominará <strong>“LA
                     INVERSION”</strong>.
@@ -533,7 +531,7 @@ ob_start();
                 ejecutable permanecerá en vigor con plenos efectos con relación a la parte que no fue declarada inválida
                 o no ejecutable.
             </p>
-            <p style="padding-top:120px;"><strong>VIGÉSIMA TERCERA.-</strong><span
+            <p ><strong>VIGÉSIMA TERCERA.-</strong><span
                     style="padding-left: 32PX; text-decoration: underline;">Ley
                     Interpretación.</span></p>
             <ol type="a">
